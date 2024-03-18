@@ -1482,11 +1482,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
           </div>
 
-          <div class="col-lg-7 col-md-7 col-12">
+          <div class="col-lg-7 col-md-7 col-12" style="border: 2px solid red;">
 
-            <div class="testi_slider mt-3">
+            <div class="testi_slider mt-3" style="border: 2px solid blue ;">
 
-              <div class="testi_titl">
+              <div class="testi_titl" style="border: 2px solid black;">
                 Our Travellers Say
 
               </div>
@@ -1498,7 +1498,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <li class="splide__slide">
                         <div class="owl-item cloned com" style="margin: 15px;">
                           <div class="owl_item con" style="position: relative;width: 320px; height: 400px; background-image: url('assets/img/union.png');background-size: cover;background-position: inherit; background-repeat: no-repeat;">
-                            <div class="owl-item conn" style="position: absolute;top:0; left: 0; width: auot; height: auot; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
+                            <div class="owl-item conn" style="position: absolute;top:0; left: 0; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
                               <div class="owl-item au" style="margin-top: 5px;margin-bottom:3px; font-weight: bold;font-size:15px">Ankit Puri</div>
                               <div style="margin-bottom:3px;">
                                 <i class="fa fa-star st" aria-hidden="true"></i>
@@ -1662,29 +1662,65 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   }
 
   @media only screen and (max-width: 600px) {
-    .is-visible .com>div {
-        width: 200px !important;
-        height: 200px !important;
-       
-        transform: scale(1) !important;
-        z-index: 1 !important;
-    }
+  .testi_outer {
+    
+  }
+  .testi_titl{
+    
+    justify-content: center;
+    margin-left: 200px;
+  }
+  .testi_lady_img img {
+    max-height: 275px;
+    width: 140px;
+    margin-right: 175px;
+    margin-top: 40px;
+  }
+  .testi_slider {
+    margin-left: -135px;
+  }
+  .owl_item con {
+    width: 160px;
+    height: 200px;
+  }
+  .owl-item conn {
+    padding: 10px;
+  }
+  .owl-item au {
+    font-size: 7.5px;
+  }
+  .owl-item para {
+    font-size: 6.5px;
+    margin-bottom: 60px;
+  }
+  .is-visible .com>div {
+    width: 300px !important;
+    height: 290px !important;
+    margin-left: 145px !important;
+    margin-top: -25px !important;
+    margin-bottom: -10px !important;
+  }
+  .is-visible .conn {
+    margin-top: 10px !important;
+  }
+  .is-visible .para {
+    font-size: 9px !important;
+  }
+  .is-visible .au {
+    font-size: 11px !important;
+  }
+  .is-visible .st {
+    font-size: 15px !important;
+  }
+  .is-next .com>div {
+    background-size: 180px 150px !important;
+    visibility: hidden !important;
+  }
+  .is-prev .com>div {
+    background-size: 180px 150px !important;
+    visibility: hidden !important;
 
-    .is-visible .conn {
-        margin-top: 10px !important;
-    }
-
-    .is-visible .para {
-        font-size: 11px !important;
-    }
-
-    .is-visible .au {
-        font-size: 12px !important;
-    }
-
-    .is-visible .st {
-        font-size: 15px !important;
-    }
+  }
 }
 
 
@@ -1727,7 +1763,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   .fa-star {
     color: #FBBD06;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
   }
 
