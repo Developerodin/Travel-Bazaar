@@ -1482,11 +1482,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
           </div>
 
-          <div class="col-lg-7 col-md-7 col-12" style="border: 2px solid red;">
+          <div class="col-lg-7 col-md-7 col-12" >
 
-            <div class="testi_slider mt-3" style="border: 2px solid blue ;">
+            <div class="testi_slider mt-3" >
 
-              <div class="testi_titl" style="border: 2px solid black;">
+              <div class="testi_titl" >
                 Our Travellers Say
 
               </div>
