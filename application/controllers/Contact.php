@@ -25,4 +25,53 @@ class Contact extends CI_Controller {
 		$this->load->view('contact');
 		$this->load->view('footer');
 	}
+	public function contact_form()
+	{
+		if (empty($_POST)) {
+			redirect(base_url());
+		}
+		// echo json_encode($_POST);
+		// die();
+	
+		$this->load->library('email');
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'ssl://smtp.gmail.com';
+		$config['smtp_port'] = '465';
+		$config['smtp_timeout'] = '7';
+		$config['smtp_user'] = 'theodinjaipur@gmail.com';
+		$config['smtp_pass'] = 'ilhphiqmihlvezxk';
+		$config['charset'] = 'utf-8';
+		$config['newline'] = "\r\n";
+		$config['mailtype'] = 'html'; // or html
+		$config['validation'] = TRUE; // bool whether to validate email or not
+	
+		$this->email->initialize($config);
+	
+		$from = $_POST['Email'];
+		$to = 'travel@travelbazaar.com.au';
+		$subject = 'Conatct Requset';
+		$message = 'Hello Team, <br /> You have a Contact Request from TravelBazaar Portal. <br />';
+		unset($_POST['g-recaptcha-response']);
+	
+		foreach ($_POST as $key => $value) {
+			$message .= $key . '- ' . $value . '<br>';
+		}
+	
+		// Add the file link to the message
+		
+		$this->email->set_newline("\r\n");
+		$this->email->from($from);
+		$this->email->to($to);
+		$this->email->subject($subject);
+		$this->email->message($message);
+	
+		// Send the email
+		if ($this->email->send()) {
+			echo "Email sent successfully"; // For debugging
+		} else {
+			echo "Email sending failed"; // For debugging
+		}
+	
+		redirect(base_url(''));
+	}
 }

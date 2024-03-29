@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const paths = [
     { id: "IN", name: "India", imagePath: "assets/img/IN.png" },
     { name: "Australia", imagePath: "assets/img/AS.png", class: "Australia" },
+    { name: "map", imagePath: "assets/img/b2.jpg", class: "map" },
+    
+    
   ];
 
   const imageContainer = document.getElementById("imageContainer");
@@ -40,6 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
       imageContainer.classList.add("hidden");
     });
   });
+
+
+
+
+document.querySelectorAll(".map").forEach((element) => {
+  element.addEventListener("mouseover", function (event) {
+    const hoveredPathClass = event.target.getAttribute("class");
+    const hoveredPathData = paths.find(
+      (path) => path.class === hoveredPathClass
+    );
+
+    if (hoveredPathData) {
+      const { imagePath } = hoveredPathData;
+      imageContainer.innerHTML = `<img src="${imagePath}" alt="${hoveredPathData.name}">`;
+      imageContainer.classList.remove("hidden");
+    }
+  });
+
+  element.addEventListener("mouseout", function () {
+    imageContainer.classList.add("hidden");
+  });
+});
 });
 
 const countryPaths = document.querySelectorAll(".country");

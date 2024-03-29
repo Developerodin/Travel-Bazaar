@@ -60,11 +60,17 @@
    <div class="elementor-background-overlay"></div>
    <div class="container">
       <div class="row" style="display:flex; align-items:top;">
-         <div class="col-sm-3" style="border-right:thin solid #fff">
+         <div class="col-sm-3 pl-0" style="border-right:thin solid #fff;    padding-left: 0;">
             <img style="width:220px;margin-right: 90px;" src="<?php echo base_url('assets/imgs/logo-white.png');?>" alt="" class="img-responsive" />
-            <p class="address-text"> <br />  <i class="fa fa-map-marker"></i>&nbsp;
+            <a href="https://maps.app.goo.gl/pNyP35BXaURFkBG58"><p class="address-text"> <br />  <i class="fa fa-map-marker"></i>&nbsp;
                Hallmarc Business Park, 11A, 475 Blackburn Rd, Mount Waverley VIC 3149
-            </p>
+            </p></a>
+            <a href="mailto:travel@travelbazaar.com.au"><p class="address-text">  <i class="fa fa-envelope"></i>&nbsp;
+               travel@travelbazaar.com.au
+            </p></a>
+            <a href="tel:+61 (03) 91110666"><p class="address-text">  <i class="fa fa-phone"></i>&nbsp;
+               +61 (03) 91110666
+            </p></a>
          </div>
          <div class="col-sm-4 us_span" style=" padding-left:50px;">
             <h5>Useful Links</h5>
@@ -72,12 +78,12 @@
             <span style="float:left; margin-left:0px">
             <a href="<?php echo base_url('business');?>">Business Travel</a>
             <br /><br />
-            <a href="<?php echo base_url('leusure');?>">Leisure Trips</a>
+            <a href="<?php echo base_url('leisure');?>">Leisure Trips</a>
             <br /> <br />
-            <a href="<?php echo base_url('about');?>">About Us</a>
+            <a href="#">About Us</a>
             </span>
             <span style="float:left">
-            <a href="<?php echo base_url('australia');?>">Australia Infinite</a> <br /><br />
+            <a href="<?php echo base_url('Australia'); ?>">Australia Infinite</a> <br /><br />
             <a href="<?php echo base_url('india');?>">India Infinite</a>
             <br /><br />
             <a href="<?php echo base_url('Contact');?>">Contact Us</a>
@@ -88,24 +94,27 @@
             <span style="display:inline-block; min-width:100px;">
                <h5>Follow Us</h5>
                <br /> 
-               <i class="fa fa-facebook footer-social"></i>
-               <i class="fa fa-instagram footer-social"></i>
+               <a class="mt-2"href="https://www.facebook.com/goodearthtravel">
+               <i class="fa fa-facebook footer-social mt-1"></i></a>
                <br /> 
-               <i class="fa fa-twitter footer-social"></i>
-               <i class="fa fa-linkedin footer-social"></i>
+               <a class="mt-2" href="https://www.instagram.com/good_earth_travel">
+               <i class="fa fa-instagram footer-social mt-1"></i></a>
+               <br /> 
+              <a class="mt-2"href="https://www.linkedin.com/company/good-earth-travel-group/">
+               <i class="fa fa-linkedin footer-social mt-1"></i></a>
             </span>
          </div>
          <div class="col-sm-3">
-             <h5>Subscribe to our Blogs</h5>
-               
-               <input type="text" class="subscribe_input" placeholder="Full Name" />
+             <h5>Subscribe for Special Offers </h5>
+               <form method="post" action="Welcome/footer_form">
+               <input type="text" class="subscribe_input" name="name" placeholder="Full Name" />
                <br />
                
-               <input type="text" class="subscribe_input" placeholder="Email" />
+               <input type="text" class="subscribe_input" name="email" placeholder="Email" />
                <br />
                
-               <input type="text" class="subscribe_input" placeholder="Contact No." />
-               <button class="btn-subscribe">Submit</button>
+               <input type="text" class="subscribe_input" name="number" placeholder="Contact No." />
+               <button type="submit" class="btn-subscribe">Submit</button></form>
          </div>
       </div>
    </div>

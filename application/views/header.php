@@ -47,6 +47,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65fd141da0c6737bd1238926/1hpi9d5v5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<style>
+  .splide__pagination__page.is-active {
+    background: grey !important;
+    transform: scale(1.4);
+    z-index: 1;
+}
+</style>
+
+<!--End of Tawk.to Script-->
 </head>
   
 
@@ -66,10 +88,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="col-sm-4 nav">
         <a href="<?php echo base_url('business');?>">BUSINESS &nbsp;|&nbsp;&nbsp;</a>
-        <a href="<?php echo base_url('leusure');?>">LEUSURE &nbsp;|&nbsp;&nbsp;</a>
+        <a href="<?php echo base_url('Leisure');?>">LEISURE &nbsp;|&nbsp;&nbsp;</a>
        
         <a href="<?php echo base_url('india');?>">INDIA &nbsp;|&nbsp;&nbsp;</a>
-        <a href="<?php echo base_url('austrailia');?>">AUSTRAILIA </a>
+        <a href="<?php echo base_url('Australia');?>">AUSTRALIA </a>
       </div>
     </div>
     </div>
