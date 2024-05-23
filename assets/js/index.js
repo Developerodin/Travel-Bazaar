@@ -26,7 +26,7 @@ const detail = 12;
 
 // Create a video element
 const video = document.createElement('video');
-video.src = 'assets/imgs/earthmap2.mp4'; 
+video.src = 'assets/imgs/Newmap.mp4'; 
 video.loop = true;
 video.muted = true; 
 video.play();

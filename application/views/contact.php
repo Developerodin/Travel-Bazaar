@@ -42,8 +42,10 @@
 												placeholder="Phone *" type="tel" required />
 										</div>
 										<div class="col-md-12 mt-3">
-											<select style="width: 100%;padding:20px;border:none;  color:#88888d;  background: gainsboro;" name="country">
-												<option value="United States">United States</option>
+											<select name="Country *" style="width: 100%;padding:20px 28px;border:none;  color:#88888d;  background: gainsboro;"  required>
+											<option value=" disabled selected hidden">Country *</option>
+											     <option value="United States">United States</option>
+
 												<option value="Afghanistan">Afghanistan</option>
 												<option value="Albania">Albania</option>
 												<option value="Algeria">Algeria</option>
@@ -296,13 +298,13 @@
 										</div>
 										<div class="col-md-12 mt-3">
 											<div class="contact2-textarea text-center">
-												<textarea placeholder="Message *"
+												<textarea placeholder="Message "
 													style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
-													name="Message" row="4" class="form-control2" required=""></textarea>
+													name="Message" row="4" class="form-control2" ></textarea>
 											</div>
 											<div class="contact-btn mt-5">
-												<button class="btn btn-sqr" type="submit"
-													style="background-color: #304C5D;">
+												<button class="btn " type="submit"
+													style="background-color: #f78f1e;color:#fff"">
 													<a style="color: white">Send Message</a>
 												</button>
 											</div>
@@ -328,8 +330,10 @@
 										<h6 class="m-0"
 											style="font-weight: 600;color: black; ">
 											Address</h6>
+											<a href="https://maps.app.goo.gl/D7vW6ewN5YA1msda7">
 										<p style="font-size: 16px;"> Hallmarc Business Park, 11A, 475 Blackburn Rd,
 											Mount Waverley VIC 3149</p>
+											</a>
 									</div>
 									<div class="col-md-2 text-center mt-3"style="display:flex;    align-items: center;    justify-content: center; ">
 										<i class="fa fa-envelope" style="font-size: x-large;color: black;"></i>

@@ -14,7 +14,7 @@
   <link href="<?php echo base_url(); ?>/assets/imgs/fav.png" rel="apple-touch-icon">
 
 
-  
+
   <!-- Vendor CSS Files -->
   <link href=" <?php echo base_url(); ?>assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,65 +37,108 @@
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url(); ?>/assets/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Raleway&display=swap" rel="stylesheet">
-<script src="
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Raleway&display=swap" rel="stylesheet">
+  <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
-<link href="
+  <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+
+
+
+  <!-- Start of Tawk.to Script
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/65fd141da0c6737bd1238926/1hpi9d5v5';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script> -->
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/65fd141da0c6737bd1238926/1hpi9d5v5';
+s1.src='https://embed.tawk.to/6618caa11ec1082f04e17a26/1hr8df2k8';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-
-<style>
-  .splide__pagination__page.is-active {
-    background: grey !important;
-    transform: scale(1.4);
-    z-index: 1;
-}
-</style>
-
 <!--End of Tawk.to Script-->
-</head>
-  
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <div class="row v-center">
-       <div class="col-sm-4">
-        <p style="color:#db3918; margin-bottom:0px; font-size:14px">
-          <i class="fa fa-phone font-11"></i> <span style="font-size:13px;color:#db3918;">+61 (03) 91110666</span> &nbsp;|&nbsp; 
-          <i class="fa fa-envelope font-12"></i> travel@travelbazaar.com.au
+
+
+
+
+
+
+
+
+ 
+
+  <style>
+    .splide__pagination__page.is-active {
+      background: grey !important;
+      transform: scale(1.4);
+      z-index: 1;
+    }
+
+    
+
+
+    
+  </style>
+
+  <!--End of Tawk.to Script-->
+</head>
+
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="container desktop-header">
+    <div class="row v-center">
+      <div class="col-sm-4">
+        <p style="color:#000000; margin-bottom:0px; font-size:14px;font-weight:500;">
+          <i class="fa fa-phone font-11"></i> <span style="font-size:13px;color:#000000;font-weight:500;font-size:14px">+61 (03) 91110666</span> &nbsp;|&nbsp;
+          <i class="fa fa-envelope font-12" style="font-size:14px;font-weight:500;"></i> travel@travelbazaar.com.au
         </p>
       </div>
       <div class="col-sm-4 text-center">
-      <a href="<?php echo base_url('');?>">  <img src="<?php echo base_url('assets/imgs/logo.png');?>" alt="" class="img-responsive logo" /></a>
-      
+        <a href="<?php echo base_url(''); ?>"> <img src="<?php echo base_url('assets/imgs/logo.png'); ?>" alt="" class="img-responsive logo" /></a>
+
       </div>
-      <div class="col-sm-4 nav">
-        <a href="<?php echo base_url('business');?>">BUSINESS &nbsp;|&nbsp;&nbsp;</a>
-        <a href="<?php echo base_url('Leisure');?>">LEISURE &nbsp;|&nbsp;&nbsp;</a>
-       
-        <a href="<?php echo base_url('india');?>">INDIA &nbsp;|&nbsp;&nbsp;</a>
-        <a href="<?php echo base_url('Australia');?>">AUSTRALIA </a>
+      <div class="col-sm-4  d-flex justify-content-center justify-content-sm-end">
+        <div class="nav " style=" ">
+          <a href="<?php echo base_url('business'); ?>" style="color: #000000;font-weight:500;font-size:14px">BUSINESS &nbsp;|&nbsp;&nbsp;</a>
+          <a href="<?php echo base_url('leusure'); ?>" style="color: #000000;font-weight:500;font-size:14px">LEISURE &nbsp;|&nbsp;&nbsp;</a>
+
+          <a href="<?php echo base_url('india'); ?>" style="color: #000000;font-weight:500;font-size:14px">INDIA &nbsp;|&nbsp;&nbsp;</a>
+          <a href="<?php echo base_url('austrailia'); ?>" style="color: #000000;font-weight:500;font-size:14px">AUSTRALIA </a>
+        </div>
       </div>
     </div>
-    </div>
-  </header>
+  </div>
+</header>
+<!-- Mobile Header -->
+
+  
+
+
+
+
 
 
 <body>

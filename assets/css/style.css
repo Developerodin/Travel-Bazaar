@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marck+Script&display=swap")
 
 body {
   font-family: 'Lato', sans-serif;
@@ -114,12 +115,12 @@ body {
 
   .page_titl {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 12px;
   }
 
   .page_titl strong {
-    font-weight: 300;
+    font-weight: 100;
     color: #f78f1e;
   }
 
@@ -161,8 +162,6 @@ body {
     border: 5px solid black;
   }
 
-  
-  
   #testi .splide__arrows {
     display: none;
   }
@@ -219,9 +218,9 @@ img{
   
 }
 a:hover {
-  color:  #3CA9C9;
+  color:  #f78f1e;
   text-decoration: none;
-}
+}p
 
 h1, h2, h3, h4, h5, h6 {
   padding: 1%;
@@ -1869,15 +1868,19 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 2.8rem 0;
-  padding-bottom: 5rem;
+  /* background-attachment: fixed; */
+  /* padding: 2.8rem 0; */
+  /* padding-bottom: 5rem; */
   -webkit-transition: all,.35s;
   -moz-transition: all,.35s;
   transition: all,.35s;
+  padding: 0;
+  margin: 0;
 }
 .section-slideshow-container.s1{
   background-image: url(../image/aus/aus_bg.jpg);
+  padding: 0;
+  margin: 0;
 }
 
 .section-slideshow-container.s2{
@@ -1893,7 +1896,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 0;
 }
 
@@ -1904,7 +1907,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0);
   z-index: 0;
 }
 
@@ -1912,7 +1915,7 @@ section {
 
 .section-content {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   color: #ffffff;
 }
 
@@ -1957,7 +1960,7 @@ section {
 
 
 p b{
-  color: #db3918;
+  color: #f78f1e;
 }
 
 
@@ -1965,7 +1968,7 @@ p b{
 /* Ensure images load vertically to prevent overlaps */
 img {
   display: block;
-  max-width: 100%;
+   max-width: 100%; 
 }
 
 /* Grid item */
@@ -2000,6 +2003,7 @@ img {
   justify-content: center;
   align-items: center;
   transition: transform .5s;
+  font-weight: 500;
 }
 
 .grid-item:hover .img-sports {

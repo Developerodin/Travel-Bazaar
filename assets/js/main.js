@@ -295,7 +295,3 @@ $(window).scroll(function() {
      $('#header').removeClass("fixed-top");
   }
 });
-
-
-
-

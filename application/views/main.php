@@ -5,6 +5,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marck+Script&display=swap" rel="stylesheet">
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"> </script>
 <script type="importmap">
         {
@@ -104,23 +108,30 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   }
 
   .is-visible .para {
-    font-size: 20px !important;
+    font-size: 18px !important;
     padding: 20px;
     justify-content: center !important;
     padding-top: 5px !important;
-
+     line-height: 1.4;
+     font-family: 'Lato', sans-serif;
   }
 
   .is-next .para {
     padding-top: 5px !important;
     font-size: 15px !important;
     padding: 20px;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    
   }
 
   .is-prev .para {
     padding-top: 5px !important;
     font-size: 15px !important;
     padding: 20px;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+
   }
 
   .is-hidden .para {
@@ -134,16 +145,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   .is-visible .au {
     font-size: 22px !important;
+    font-family: 'Lato', sans-serif;
 
 
   }
 
   .is-next .au {
     margin-top: 35px !important;
+    font-family: 'Lato', sans-serif;
   }
 
   .is-prev .au {
     margin-top: 35px !important;
+    font-family: 'Lato', sans-serif;
   }
 
   .is-hidden .au {
@@ -193,21 +207,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   @media only screen and (max-width: 786px) {
 
     .owl-item.com {
-      display: none;
+      /* display: none; */
     }
     .owl-item  com {
-  display: none !important;
+  /* display: none !important; */
 }
 
     .owl_item con {
       width: 160px;
       height: 200px;
-      display: none;
+      /* display: none; */
     }
 
     .owl-item conn {
       padding: 10px;
-      display: none;
+      /* display: none; */
     }
 
     .owl-item au {
@@ -218,11 +232,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       font-size: 6.5px;
       margin-bottom: 60px;
     }
-
+    .testi_lady_img {
+      display: none;
+    }
     .is-visible .com>div {
+      margin-top: 20px !important;
       width: 240px !important;
       height: 210px !important;
       margin: 50%;
+      margin-bottom: 20px !important;
 
       /* margin-top: -25px !important;
     margin-bottom: -10px !important; */
@@ -264,7 +282,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       visibility: hidden !important;
       background-size: 180px 150px !important;
     }
-
+     
+    
   }
   /* @media only screen and (min-width: 1280px) {
   
@@ -308,6 +327,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     padding: 10px;
   }
 } */
+
+@media only screen and (max-width: 767px) {
+  
+  .splide__slide img {
+    display: flex;
+    
+    width: 200% !important;  /* Set image width to 100% of its container */
+    height: 100% !important; /* Allow the image to scale proportionally */
+  }
+}
+
+@media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
 
 @media only screen and (max-width: 768px) {
   
@@ -359,11 +394,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
   }
 
   .page_titl strong {
-    font-weight: 300;
+    font-weight: 600;
     color: #f78f1e;
+    font-family: 'Lato', sans-serif;
   }
 
   .testi_titl {
@@ -386,7 +423,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   .splide__slide img {
     width: 200px;
-    height: 80px;
+    height: 110px;
   }
 
 
@@ -408,6 +445,30 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   .fa-star.active {
     color: #FBBD06
   }
+
+  @media (max-width: 767px) {
+  .cho_abt ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cho_abt ul li {
+     
+    max-width: 100%; /* Set maximum width to avoid overflowing */
+    text-align: center;
+    margin-bottom: 10px; /* Add some space between rows */
+  }
+}
+.button {
+        background-color: black;
+
+    }
+
+    .button:hover {
+        background-color: black;
+    }
+
 </style>
 <section class="video-header">
   <video src="<?php echo base_url('assets/imgs'); ?>/travel.mp4" autoplay loop playsinline muted></video>
@@ -424,7 +485,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <div class="container">
     <div class="card-row">
       <div class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-2">
           <a href="<?php echo base_url('business'); ?>">
             <div class="card-travel c1">
@@ -442,13 +503,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </a>
         </div>
-        <div class="col-sm-2">
+        <!-- <div class="col-sm-2">
           <a href="<?php echo base_url('Contact'); ?>">
             <div class="card-travel c3">
               <h3>Bookings Online</h3>
             </div>
           </a>
-        </div>
+        </div> -->
         <div class="col-sm-2">
           <a href="<?php echo base_url('india'); ?>">
             <div class="card-travel c4">
@@ -471,29 +532,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </section>
 
 <section>
-  <div class="container">
+  <div class="container pb-4">
     <div class="row">
       <div class="col-sm-12">
         <br /><br /><br />
-        <h5 class="mt-30 text-start">Who We Are</h5>
+        <h5 class="mt-30  " style="color: #f78f1e;font-size:32px;font-family:'Lato',sans-serif;margin-left: -10px;">Who We Are</h5>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12 ">
         <div class="row">
           <div class="col-sm-6">
-            <h3 class=" text-justify"> Good Earth Travel Group Pty Ltd (GETG) is one of the leading corporate travel agencies in the region. </h3>
-            <p class="font-14 text-justify" > Established in 2000, our company has garnered acclaim for providing exceptional travel services, focusing primarily on leisure travel offerings. GET is a prominent travel enterprise based in Jaipur, India, complemented by an office in Melbourne, Australia since 2012. <br><br>
+            <h3 class=" text-justify" style="margin-top: -4px;font-size: 20px;"> Welcome to Good Earth Travel Group (GETG), an esteemed travel enterprise established in 2000, renowned for delivering outstanding travel services. </h3>
+            <p class="font-15 text-justify" style="font-weight: 400;font-size:15px;" >  With two centralised offices in Australia and India, we proudly serve clients worldwide. 
 
-              Good Earth Travel is a representative location of American Express TRS and as a member of the American Express Global Travel Network is fully familiar with international performance standards required by large corporate organizations.<br><br>
+            At GETG, we house a diverse portfolio of specialised brands, including Travel Bazaar, India Infinite, OZ Infinite, and Signature Representation. Leveraging our strong relationships with major international and domestic airlines, hotels, and travel suppliers, we ensure unparalleled access and value for our clients.<br><br>
               
-              Good Earth Travel Group comprises of various specialized brands like Travel Bazaar, India Infinite, OZ Infinite and Signature Representation. GETG has substantial leverage with all major International and Domestic Airlines and Hotels.
+            Our commitment to maintaining exceptional service standards is reinforced by substantial investments in technology and our dedicated team. With extensive experience catering to quality-sensitive clients, we possess the expertise to tailor comprehensive travel solutions that precisely meet your needs.
               <br><br>
-              One-Stop-Shop with complete range of Travel, Forex, Cargo, MICE, tours etc. All travel related needs under one roof.
-              <br><br>
-              Our capability to ensure conformity to high service standards is supported by substantial investment in technology and people. Our experience in servicing quality sensitive clients gives us the competitive edge to offer a comprehensive package of services to meet the entire range of your travel requirements.
-              
+              Choose GETG for a seamless and personalised travel experience that exceeds your expectations.
             </p>
+            <a href="<?php echo base_url('Contact'); ?>">
+            <button class="btn " style="background-color: black;color:#fff;font-family:'Lato';">Read More...</button>
+            </a>
           </div>
           <div class="col-md-6 col-12">
             <div class="abt_img text-end">
@@ -521,75 +582,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
   </div>
 </section>
-<div class="airlinelogo_outer text-center mt-5" id="airline">
-  <div class="container">
-    <div class="page_titl"><strong>Airlines</strong> – We Partner</div>
-    <div class="page_txt">
-      Whether you're planning to uncover the hidden gems of your own country or embark on an international escapade,
-      we've got you covered. Explore our extensive selection of domestic and international flights, and unlock
-      unbeatable prices that will leave you thrilled. Contact us now to book your next adventure and embark on a journey
-      you'll love!
-    </div>
-    <div class="air_logos pt-5 pb-5">
-      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-          <ul class="splide__list">
 
-            <li class="splide__slide"><img src="assets/imgs/air/Air_Canada_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Air_France_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Air_India_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Air-New-Zealand-logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/American_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Air_China_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Batik_Air_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/British_Airways_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Cathay_Pacific_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Fiji_Airways_Logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Emirates_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Etihad_Airways_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Garuda_Indonesia_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/China_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Japan_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/KLM_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Delta_air_lines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Lufthansa_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Malaysia_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Qantas_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Qatar_Airways_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Singapore_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Srilankan_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Swiss_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Turkish_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/United_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Virgin_Australia_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Ethiopian_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Vietnam_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Thai_Airways_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Srilankan_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Vistara_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/VietJet_Air_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/All-Nippon_Airways_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Finnair_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/IndiGo_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Jetstar_Logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/Philippine_Airlines_logo.png"> </li>
-            <li class="splide__slide"><img src="assets/imgs/air/China_Southern_logo.png"> </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <section class="p-0"
   style=" position: relative;background-image: url('assets/imgs/back.jpg');    background-repeat: no-repeat;    background-size: cover;">
   <div class="overlay"></div>
   <div class="we_are " style=" position: relative;  ">
-    <div class="wdt-heading-holder container pt-5">
-      <div class="text-white text-center font-sp2 pt-5"><span class="wdt-heading-subtitle"
-          style="font-family: 'Mansalva', cursive;">Crafting Unforgettable Adventure Tours and Activities</span></div>
-      <h2 class="text-white text-center font-sp pt-5"><span class="wdt-heading-title">What We Offer</span></h2>
+    <div class="wdt-heading-holder container pt-3">
+      <div class="text-white text-center font-sp2 pt-3"><span class="wdt-heading-subtitle"
+          style="font-family: 'Marck Script';">Crafting Unforgettable Adventure Tours and Activities</span></div>
+      <h2 class="text-white text-center font-sp pt-2"><span class="wdt-heading-title" style="font-size: 32px;">What We Offer</span></h2>
     </div>
     <div class="">
       <div class="row mt-5 mb-2 text-white  pb-5">
@@ -599,7 +601,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="col-md-6 row">
             <div class="col-md-3 col-3 text-white text-center">
               <span><i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:80px;"
+                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:60px;"
                     xml:space="preserve">
                     <style type="text/css">
                       .travel-0 {
@@ -621,59 +623,50 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </svg></i></span>
             </div>
             <div class="col-md-9 col-9">
-              <h4 class=""> Explore the Ultimate Destination</h4>
+              <h4 class="" style="font-weight: 600;"> Crafted Itineraries & Unbeatable Deals</h4>
               <p style="color:#fff;font-size:14px;">
-                Experience captivating journeys with our travel adventures.
+              Expertly crafted itineraries for unforgettable adventures. Exclusive discounts on diverse travel packages guaranteeing value without compromise. Your perfect blend of adventure, relaxation, and culture awaits
               </p>
             </div>
 
           </div>
           <div class="col-md-6 row">
-            <div class="col-md-3 col-3 text-white text-center">
-              <span><i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:80px;"
-                    xml:space="preserve">
-                    <style type="text/css">
-                      .travel-1 {
-                        fill: none;
-                        stroke: currentcolor;
-                        stroke-width: 2;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                      }
-
-                      .travel-2 {
-                        fill: none;
-                        stroke: currentcolor;
-                        stroke-width: 2;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-dasharray: 28, 28;
-                      }
-                    </style>
-                    <g>
-                      <path class="travel-1"
-                        d="M75.5,5.8c10.3,0,18.6,8.3,18.6,18.6c0,2.9-0.7,5.7-2,8.3c-2.4,4.8-14.5,13.1-16.6,22.1  c-3.5-8.8-14.2-17.3-16.6-22.1c-4.6-9.2-0.8-20.3,8.3-24.9C69.8,6.5,72.7,5.8,75.5,5.8z">
-                      </path>
-                      <path class="travel-1"
-                        d="M75.5,15c5.1,0,9.2,4.1,9.2,9.2s-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2c0,0,0,0,0,0  C66.3,19.1,70.4,15,75.5,15C75.5,15,75.5,15,75.5,15z">
-                      </path>
-                      <path class="travel-1"
-                        d="M31.2,25.4c14,0,25.3,11.3,25.3,25.3c0,3.9-0.9,7.8-2.7,11.3c-3.3,6.5-19.7,17.8-22.6,30.1  C26.5,80.1,11.8,68.5,8.6,62C2.3,49.5,7.4,34.3,19.9,28.1C23.4,26.3,27.3,25.4,31.2,25.4z">
-                      </path>
-                      <path class="travel-1"
-                        d="M31.2,37.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5l0,0  C18.7,43.5,24.3,37.9,31.2,37.9C31.2,37.9,31.2,37.9,31.2,37.9z">
-                      </path>
-                      <path class="travel-2"
-                        d="M38.3,93.5c8.6,1.4,25,0.3,35.5-0.7c19-1.8,16.8-14.1,0.2-15.2c-3.1-0.2-10.9-0.5-12.8-1.4  c-3.8-1.9-4.6-7.4,0.8-9c2.1-0.6,5.7-1.2,8.3-3.1c2.5-1.9,4.3-4.6,5.3-7.6">
-                      </path>
-                    </g>
-                  </svg></i></span>
+            <div class="col-md-3 col-3 text-white text-center" >
+              <span><i><img src="assets/imgs/Airicon.png" style="width:60px;height:60px; filter: invert(1);"></i></span>
             </div>
+
+            
             <div class="col-md-9 col-9">
-              <h4 class="">Discover Enriching Experiences </h4>
+              <h4 class="" style="font-weight: 600;"> Global air travel </h4>
               <p style="color:#fff;font-size:14px;">
-                Immerse yourself in unforgettable moments, where adventure meets tranquility.
+              Jet set across the globe hassle-free with our global air ticketing solutions. From popular hubs to off-the-beaten-path destinations, we're your passport to worldwide exploration
+              </p>
+            </div>
+
+          </div>
+          <div class="col-md-6 row">
+            <div class="col-md-3 col-3 text-white text-center" >
+              <span><i><img src="assets/imgs/Booking.png" style="width:60px;height:60px;filter: invert(1);"></i></span>
+            </div>
+
+            <div class="col-md-9 col-9">
+              <h4 class="" style="font-weight: 600;">Great Accommodation</h4>
+              <p style="color:#fff;font-size:14px;">
+              Choose from a curated selection of handpicked hotels, resorts, villas, and guesthouses, each renowned for their exceptional service, amenities, and prime locations
+              </p>
+            </div>
+
+          </div>
+          <div class="col-md-6 row">
+            <div class="col-md-3 col-3 text-white text-center" >
+              <span><i><img src="assets/imgs/Hotel.png" style="width:60px;height:60px;filter: invert(1);"></i></span>
+            </div>
+
+            
+            <div class="col-md-9 col-9">
+              <h4 class="" style="font-weight: 600;">Flexible Booking Options & 24/7 Service </h4>
+              <p style="color:#fff;font-size:14px;">
+              Whether you're planning a spontaneous getaway or a meticulously planned vacation, we offer flexible booking options to accommodate your schedule, preferences, and budget
               </p>
             </div>
 
@@ -681,7 +674,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="col-md-6 row">
             <div class="col-md-3 col-3 text-white text-center">
               <span><i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:80px;"
+                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:60px;"
                     xml:space="preserve">
                     <style type="text/css">
                       .travel-3 {
@@ -702,8 +695,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </g>
                   </svg></i></span>
             </div>
+
+
             <div class="col-md-9 col-9">
-              <h4 class="">Expert Tour Guides for Unforgettable Adventures </h4>
+              <h4 class="" style="font-weight: 600;">Expert Tour Guides for Unforgettable Adventures </h4>
               <p style="color:#fff;font-size:14px;">
                 Discover endless possibilities as you explore captivating destinations, where every moment becomes a
                 cherished memory
@@ -714,7 +709,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="col-md-6 row">
             <div class="col-md-3 col-3 text-white text-center">
               <span><i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:80px;"
+                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:60px;"
                     xml:space="preserve">
                     <style type="text/css">
                       .travel-4 {
@@ -752,26 +747,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </svg></i></span>
             </div>
             <div class="col-md-9 col-9">
-              <h4 class=""> Convenient Door-to-Door Transportation Services </h4>
+              <h4 class="" style="font-weight: 600;"> Convenient Door-to-Door Transportation Services </h4>
               <p style="color:#fff;font-size:14px;">
                 Embark on a journey where time stands still, and experience the ultimate escape from the mundane
               </p>
             </div>
 
           </div>
-          <div class="col-md-10 col-12 row mt-4 pb-4">
+          <!-- <div class="col-md-10 col-12 row mt-4 pb-4">
             <div class="col-md-4 col-12 text-center mt-3">
               <a href="<?php echo base_url('Contact');?>"><button type="button" class="btn " style="background-color: #db3918;color:#fff;">TALK TO US</button></a>
             </div>
-            <div class="col-md-4 col-6 row mt-3">
-              <div class="col-md-2 col-2 text-center" style="display: flex;align-items: center;justify-content: end;"><i
+            <div class="col-md-4 col-6 row mt-3 hide-on-mobile">
+              <div class="col-md-2 col-2 text-center " style="display: flex;align-items: center;justify-content: end;"><i
                   class="fa fa-phone " style="    font-size: 25px;"></i></div>
               <div class="col-md-10 col-10">
                 <p class="text-white mb-0" style="color:#fff;font-size:14px;">Call Us Anytime</p>
                 <a href="tel:+61 (03) 91110666"><p class="text-white" style="color:#fff;font-size:14px;">+61 (03) 91110666 </p></a>
               </div>
             </div>
-            <div class="col-md-4 col-6 row mt-3">
+            <div class="col-md-4 col-6 row mt-3 hide-on-mobile">
               <div class="col-md-2 col-2 text-center" style="display: flex;align-items: center;justify-content: end;"><i
                   class="fa fa-envelope " style="    font-size: 25px;"></i></div>
               <div class="col-md-10 col-10">
@@ -781,7 +776,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </div>
             </div>
 
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -790,11 +785,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 </section>
 
+
 <section class="testimonial">
 
 <div class="text-center mt-5" style="padding: 0 5%;">
-    <h4 style="font-family: 'Mansalva', cursive;padding-bottom: 0;margin-bottom: 0;">Place to travel</h4>
-    <h1 class="pb-5 mt-0 pt-2">Dream. Explore. Discover.</h1>
+  <h4 style="font-family: 'Marck Script'; padding-bottom: 0;margin-bottom: 0;font-size:32px">Dream. Explore. Discover.</h4>
+  <h1 class="pb-2 mt-0 pt-4" style="color:#f78f1e;font-size:32px; font-family:'Lato',sans-serif;font-weight:600;">Place To Travel</h1>
+  <div class="page_txt" style="" >
+  Move around the globe and pick your desired spot to travel and connect with our specialised team to get closer to your travel journey
+    </div>
     <div class="earth-container">
 
 
@@ -839,14 +838,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div><br>
           <div class="">
             <a href="<?php echo base_url('india'); ?>">
-              <button class="btn " style="background-color: #db3918;color:#fff">Explore Now</button>
+              <button class="btn " style="background-color: #f78f1e;color:#fff">Explore Now</button>
             </a>
           </div>
 
         </div>
         <a href="<?php echo base_url('india'); ?>">
 
-          <img src="assets/imgs/ind.webp" alt="" style="width:100%;" class="zoom serv-img" title="" />
+          <img src="assets/imgs/India4.jpg" alt="" style="width:100%;" class="zoom serv-img" title="" />
         </a>
       </div>
       <div class="col-md-4  mt-3 p-0" style="align-items: center;display: flex;justify-content: center;">
@@ -856,37 +855,98 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div><br>
           <div class="">
             <a href="<?php echo base_url('Australia'); ?>">
-              <button class="btn " style="background-color: #db3918;color:#fff">Explore Now</button>
+              <button class="btn " style="background-color: #f78f1e;color:#fff">Explore Now</button>
             </a>
           </div>
 
         </div>
         <a href="<?php echo base_url('leisure'); ?>">
 
-          <img src="assets/imgs/swi.webp" alt="" style="width:100%;" class="zoom serv-img" title="" />
+          <img src="assets/imgs/Australia2.jpg" alt="" style="width:100%;" class="zoom serv-img" title="" />
         </a>
       </div>
       <div class="col-md-4  mt-3 p-0" style="align-items: center;display: flex;justify-content: center;">
         <div class="serv-name3 text-center">
           <div class="">
-            <h2 style="font-weight:700;color: white;">REST OF THE WORLD</h2>
+            <h2  style="font-weight:700;color: white;padding:0% !important;">REST OF THE WORLD</h2>
           </div><br>
           <div class="">
             <a href="<?php echo base_url('leisure'); ?>">
-              <button class="btn " style="background-color: #db3918;color:#fff">Explore Now</button>
+              <button class="btn " style="background-color: #f78f1e;color:#fff">Explore Now</button>
             </a>
           </div>
 
         </div>
         <a href="<?php echo base_url('leisure'); ?>">
 
-          <img src="assets/imgs/thai.webp" alt="" style="width:100%;" class="zoom serv-img" title="" />
+          <img src="assets/imgs/Cityscape.jpg" alt="" style="width:100%;" class="zoom serv-img" title="" />
         </a>
       </div>
     </div>
 
 
   </div>
+  <div class="airlinelogo_outer text-center mt-4" id="airline">
+  <div class="container">
+  <h2 class="mt-5" style="font-family: 'Marck Script', cursive;padding-bottom: 0;margin-bottom: 0;">Empowering Connections</h2>
+    <div class="page_titl" style="margin-top:6px ;font-size:32px;"><strong>Our Partners</strong></div>
+    <div class="page_txt">
+      Whether you're planning to uncover the hidden gems of your own country or embark on an international escapade,
+      we've got you covered. Explore our extensive selection of domestic and international flights, and unlock
+      unbeatable prices that will leave you thrilled. Contact us now to book your next adventure and embark on a journey
+      you'll love!
+    </div>
+    <div class="air_logos pt-5 pb-5">
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+
+            <li class="splide__slide img-fluid"><img src="assets/imgs/air/Air_Canada_logo.png"> </li>
+            <li class="splide__slide img-fluid"><img src="assets/imgs/air/Air_France_logo.png"> </li>
+            <li class="splide__slide img-fluid"><img src="assets/imgs/air/Air_India_logo.png"> </li>
+            <li class="splide__slide img-fluid"><img src="assets/imgs/air/Air-New-Zealand-logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/American_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Air_China_logo.png"> </li>
+            <li class="splide__slide img-fluid"><img src="assets/imgs/air/Batik_Air_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/British_Airways_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Cathay_Pacific_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Fiji_Airways_Logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Emirates_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Etihad_Airways_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Garuda_Indonesia_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/China_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Japan_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/KLM_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Delta_air_lines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Lufthansa_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Malaysia_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Qantas_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Qatar_Airways_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Singapore_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Srilankan_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Swiss_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Turkish_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/United_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Virgin_Australia_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Ethiopian_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Vietnam_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Thai_Airways_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Srilankan_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Vistara_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/VietJet_Air_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/All-Nippon_Airways_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Finnair_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/IndiGo_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Jetstar_Logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/Philippine_Airlines_logo.png"> </li>
+            <li class="splide__slide"><img src="assets/imgs/air/China_Southern_logo.png"> </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <div class="pt-5 mb-5" style="padding:0 5%; ">
@@ -896,9 +956,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <div class="row">
           <div class="col-sm-12 text-center pb-4">
-            <h2 class="mt-5" style="font-family: 'Mansalva', cursive;padding-bottom: 0;margin-bottom: 0;"> Testimonials</h2>
-            <div class="testi_titl text-center pt-2">
-              Our Travellers Say
+            <h2 class="mt-5" style="font-family: 'Marck Script', cursive;padding-bottom: 0;margin-bottom: 0;">What Our Travellers Say</h2>
+            <div class="testi_titl text-center pt-2" style="font-family: 'Lato',sans-sarif; color: #f78f1e; font-size:30px;">
+              Testimonials
   
             </div>
           </div>
@@ -937,7 +997,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 <i class="fa fa-star st" aria-hidden="true"></i>
                               </div>
                               <div class="owl-item para"
-                                style="font-size: 13px; text-align: center;margin-bottom:120px;">
+                                style="font-size: 13px; text-align: center;margin-bottom:120px; ">
                                 "What a fantastic adventure! Thanks to this travel agency, we explored new destinations
                                 with ease. Professionalism, attention to detail, and exceptional service—truly
                                 remarkable!"
@@ -1315,6 +1375,108 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                               <div class="owl-item para"
                                 style="font-size: 13px; text-align: center;margin-bottom:120px;">
                                 "They are fast and helpful in finding affordable tickets. Service is really good, I will highly recommend to my family and friends"</div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="splide__slide">
+                        <div class="owl-item cloned com" style="margin: 15px;">
+                          <div class="owl_item con "
+                            style="width: 320px; height: 400px; background-image: url('assets/img/union.png');background-size: cover;background-position: inherit; background-repeat: no-repeat;">
+                            <div class="owl-item conn"
+                              style="position: absolute;top:0; left: 0; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
+                              <div class="owl-item au"
+                                style="margin-top: 4px;margin-bottom:3px; font-weight: bold;font-size:15px;">Alexander
+                                D'souza</div>
+                              <div style="margin-bottom:2px;">
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                              </div>
+                              <div class="owl-item para"
+                                style="font-size: 13px; text-align: center;margin-bottom:130px;">
+                                "Nishant & Travelbazar travel agency is a trusted & competent agent to do your travel bookings with & have recommended
+                                 them to my relatives & friends & they are all happy with their booking with travel bazaar .I would definitely recommend  them to anyone."
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="splide__slide">
+                        <div class="owl-item cloned com" style="margin: 15px;">
+                          <div class="owl_item con "
+                            style="width: 320px; height: 400px; background-image: url('assets/img/union.png');background-size: cover;background-position: inherit; background-repeat: no-repeat;">
+                            <div class="owl-item conn"
+                              style="position: absolute;top:0; left: 0; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
+                              <div class="owl-item au"
+                                style="margin-top: 5px;margin-bottom:3px; font-weight: bold;font-size:15px;">Sarah Wilson
+                                </div>
+                              <div style="margin-bottom:3px;">
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                              </div>
+                              <div class="owl-item para"
+                                style="font-size: 13px; text-align: center;margin-bottom:120px;">
+                                "Good Earth Travel planned my unforgettable trip to India flawlessly. From luxurious Indian accommodations to immersive cultural experiences, they ensured every detail was perfect. Highly recommend for an unparalleled adventure!."
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="splide__slide">
+                        <div class="owl-item cloned com" style="margin: 15px;">
+                          <div class="owl_item con "
+                            style="width: 320px; height: 400px; background-image: url('assets/img/union.png');background-size: cover;background-position: inherit; background-repeat: no-repeat;">
+                            <div class="owl-item conn"
+                              style="position: absolute;top:0; left: 0; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
+                              <div class="owl-item au"
+                                style="margin-top: 4px;margin-bottom:3px; font-weight: bold;font-size:15px;">Emily
+                                Jones</div>
+                              <div style="margin-bottom:2px;">
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                              </div>
+                              <div class="owl-item para"
+                                style="font-size: 13px; text-align: center;margin-bottom:140px;">
+                                "I  had a breathtaking trip across India with my family, hitting all the must-see destinations flawlessly.
+                                 From the Taj Mahal to the backwaters of Kerala, each stop was meticulously planned by Nishant for maximum beauty and enjoyment."
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="splide__slide">
+                        <div class="owl-item cloned com" style="margin: 15px;">
+                          <div class="owl_item con "
+                            style="width: 320px; height: 400px; background-image: url('assets/img/union.png');background-size: cover;background-position: inherit; background-repeat: no-repeat;">
+                            <div class="owl-item conn"
+                              style="position: absolute;top:0; left: 0; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 10px;">
+                              <div class="owl-item au"
+                                style="margin-top: 5px;margin-bottom:3px; font-weight: bold;font-size:15px;">Jessica Thompson</div>
+                              <div style="margin-bottom:3px;">
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                                <i class="fa fa-star st" aria-hidden="true"></i>
+                              </div>
+                              <div class="owl-item para"
+                                style="font-size: 13px; text-align: center;margin-bottom:130px;">
+                                "It was an incredible journey from vibrant Mumbai to majestic landscapes of Rajasthan.
+                                 Exploring the bustling markets and delicious street food of Mumbai to marvelling at the grandeur of Jaipur's palaces and its rich culture."
+                              </div>
                             </div>
                           </div>
                         </div>

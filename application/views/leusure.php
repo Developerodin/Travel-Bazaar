@@ -1,672 +1,381 @@
-<!-- <style>
-    .abt_txt {
-        color: #515151;
-        font-weight: 400;
-        line-height: 1.7;
-    }
-
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 100%;
-        margin: auto;
-        text-align: start;
-        background-color: #fcfaee;
-
-    }
-
-    .img_mask {
-        -webkit-mask-image: url(assets/imgs/mask-image.png);
-        mask-image: url(assets/imgs/mask-image.png);
-        -webkit-mask-position: top left;
-        mask-position: top left;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-    }
-</style>
-<section class="pt-5 mb-5">
-    <div class="container text-center mt-5">
-        <span style="color:black;"><i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;height:80px;"
-                    xml:space="preserve">
-                    <style type="text/css">
-                        .travel-1 {
-                            fill: none;
-                            stroke: currentcolor;
-                            stroke-width: 2;
-                            stroke-linecap: round;
-                            stroke-linejoin: round;
-                        }
-
-                        .travel-2 {
-                            fill: none;
-                            stroke: currentcolor;
-                            stroke-width: 2;
-                            stroke-linecap: round;
-                            stroke-linejoin: round;
-                            stroke-dasharray: 28, 28;
-                        }
-                    </style>
-                    <g>
-                        <path class="travel-1"
-                            d="M75.5,5.8c10.3,0,18.6,8.3,18.6,18.6c0,2.9-0.7,5.7-2,8.3c-2.4,4.8-14.5,13.1-16.6,22.1  c-3.5-8.8-14.2-17.3-16.6-22.1c-4.6-9.2-0.8-20.3,8.3-24.9C69.8,6.5,72.7,5.8,75.5,5.8z">
-                        </path>
-                        <path class="travel-1"
-                            d="M75.5,15c5.1,0,9.2,4.1,9.2,9.2s-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2c0,0,0,0,0,0  C66.3,19.1,70.4,15,75.5,15C75.5,15,75.5,15,75.5,15z">
-                        </path>
-                        <path class="travel-1"
-                            d="M31.2,25.4c14,0,25.3,11.3,25.3,25.3c0,3.9-0.9,7.8-2.7,11.3c-3.3,6.5-19.7,17.8-22.6,30.1  C26.5,80.1,11.8,68.5,8.6,62C2.3,49.5,7.4,34.3,19.9,28.1C23.4,26.3,27.3,25.4,31.2,25.4z">
-                        </path>
-                        <path class="travel-1"
-                            d="M31.2,37.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5l0,0  C18.7,43.5,24.3,37.9,31.2,37.9C31.2,37.9,31.2,37.9,31.2,37.9z">
-                        </path>
-                        <path class="travel-2"
-                            d="M38.3,93.5c8.6,1.4,25,0.3,35.5-0.7c19-1.8,16.8-14.1,0.2-15.2c-3.1-0.2-10.9-0.5-12.8-1.4  c-3.8-1.9-4.6-7.4,0.8-9c2.1-0.6,5.7-1.2,8.3-3.1c2.5-1.9,4.3-4.6,5.3-7.6">
-                        </path>
-                    </g>
-                </svg></i></span>
-        <h6 style="font-family: 'Mansalva', cursive;font-size:20px">Enjoy with adventure</h6>
-
-
-
-
-        <div class="row mt-5">
-            <div class="col-md-7 text-start">
-
-                <h1 class="text-start text-black">We’re Have Trusted Travel <span style="color:#db3918;">Partner Around
-                        The World</span> </h1>
-                <h6 class="abt_txt">
-                    Welcome to Trevel Bazaar Plan, your ultimate destination for all your travel needs. Whether you're a
-                    group or an independent traveler, we take pride in providing professional and personalized services.
-                    We consider ourselves holiday planners, offering a comprehensive solution to book your travel
-                    arrangements anywhere in the world.</h6>
-                <h6 class="abt_txt">With over 25 years of experience in the travel trade, our team possesses practical
-                    knowledge and
-                    skills to design tailor-made programs. By combining our commitment, expertise, and dedicated
-                    service, we ensure that your holiday is not only memorable but also hassle-free.
-                    <br>
-                    At Trevel Bazaar Plan, we understand that searching through countless websites to plan your vacation
-                    can be overwhelming. That's why we have already done the research for you. We aim to facilitate your
-                    travel arrangements by offering a one-stop shop for all your booking needs.
-                    <br>
-                    To get started, simply reach out to us via phone, email, or WhatsApp with your travel requirements.
-                    Rest assured, our team will promptly respond to your inquiry and can even arrange a personalized
-                    meeting at your convenience. Let us take care of the details, so you can focus on enjoying your
-                    dream holiday.
-                    <br>
-                    Experience the convenience and expertise of Trevel Bazaar Plan. Contact us today and embark on an
-                    unforgettable journey.
-                </h6>
-            </div>
-            <div class="col-md-5">
-
-                <img src="assets/imgs/business.jpg" alt="Business" />
-            </div>
-
-        </div>
-
-
-
-    </div>
-</section>
-
-<section class="p-0"
-    style=" position: relative;background-image: url('assets/imgs/back1.jpg');    background-repeat: no-repeat;    background-size: cover;height:600px;">
-    <div class="overlay"></div>
-    <div class="we_are " style=" position: relative;height: 100%;">
-        <div class="wdt-heading-holder container pt-5"style=" height: 100%;">
-            <div class="row"style=" height: 100%;">
-                <div class="col-md-8 col-12 d-flex " style="align-items: center;
-                ">
-                    <h2 class="text-white text-start font-sp pt-5"><span class="wdt-heading-title">Become member &
-                            travel to foreign locations while paying domestic rates</span></h2>
-                </div>
-                <div class="col-md-4 col-4">
-                    
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="pt-5 pb-5" style="background-color:#fcfaee;">
-    <div style="background-image: url('assets/imgs/wild.png');  background-repeat: no-repeat;    background-size: cover;">
-        <div class="container text-center mt-5">
-            <span style="color:black;"><i><svg xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
-                        style="enable-background:new 0 0 100 100;height:80px;" xml:space="preserve">
-                        <style type="text/css">
-                            .travel-1 {
-                                fill: none;
-                                stroke: currentcolor;
-                                stroke-width: 2;
-                                stroke-linecap: round;
-                                stroke-linejoin: round;
-                            }
-
-                            .travel-2 {
-                                fill: none;
-                                stroke: currentcolor;
-                                stroke-width: 2;
-                                stroke-linecap: round;
-                                stroke-linejoin: round;
-                                stroke-dasharray: 28, 28;
-                            }
-                        </style>
-                        <g>
-                            <path class="travel-1"
-                                d="M75.5,5.8c10.3,0,18.6,8.3,18.6,18.6c0,2.9-0.7,5.7-2,8.3c-2.4,4.8-14.5,13.1-16.6,22.1  c-3.5-8.8-14.2-17.3-16.6-22.1c-4.6-9.2-0.8-20.3,8.3-24.9C69.8,6.5,72.7,5.8,75.5,5.8z">
-                            </path>
-                            <path class="travel-1"
-                                d="M75.5,15c5.1,0,9.2,4.1,9.2,9.2s-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2c0,0,0,0,0,0  C66.3,19.1,70.4,15,75.5,15C75.5,15,75.5,15,75.5,15z">
-                            </path>
-                            <path class="travel-1"
-                                d="M31.2,25.4c14,0,25.3,11.3,25.3,25.3c0,3.9-0.9,7.8-2.7,11.3c-3.3,6.5-19.7,17.8-22.6,30.1  C26.5,80.1,11.8,68.5,8.6,62C2.3,49.5,7.4,34.3,19.9,28.1C23.4,26.3,27.3,25.4,31.2,25.4z">
-                            </path>
-                            <path class="travel-1"
-                                d="M31.2,37.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5l0,0  C18.7,43.5,24.3,37.9,31.2,37.9C31.2,37.9,31.2,37.9,31.2,37.9z">
-                            </path>
-                            <path class="travel-2"
-                                d="M38.3,93.5c8.6,1.4,25,0.3,35.5-0.7c19-1.8,16.8-14.1,0.2-15.2c-3.1-0.2-10.9-0.5-12.8-1.4  c-3.8-1.9-4.6-7.4,0.8-9c2.1-0.6,5.7-1.2,8.3-3.1c2.5-1.9,4.3-4.6,5.3-7.6">
-                            </path>
-                        </g>
-                    </svg></i></span>
-            <h6 style="font-family: 'Mansalva', cursive;font-size:20px">Enjoy with your love</h6>
-            <h2 style="    font-size: clamp(30px, 1.4423rem + 1.9231vw, 60px);color:black;">Find your best <br>
-                destinations
-            </h2>
-
-            <div class="row justify-content-around">
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/canoe.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            CANOE
-                            ADVENTURE</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive"
-                                    style="width: 10%;" /></span>Thailand
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/wild1.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            WILD SAFARI</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive"
-                                    style="width: 10%;" /></span>India
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/mount.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            MOUNTAIN CLIMBING</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive"
-                                    style="width: 10%;" /></span>Kerala
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/kay.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            KAYAKING</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive" style="width: 10%;" /></span>USA
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/zip.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            ZIP LINE</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive"
-                                    style="width: 10%;" /></span>Australia
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="col-md-4 text-start mt-3">
-                    <div class="card">
-                        <img src="assets/imgs/can.jpg" class="img-responsive p-0" alt="" />
-                        <h1 class="mt-2"
-                            style="text-align: start; font-size: clamp(10px, 1.4423rem + 1.9231vw, 20px);color:black;padding: 0 15px;">
-                            CANAL RIDE</h1>
-                        <h4><span><img src="assets/imgs/loc.svg" class="img-responsive"
-                                    style="width: 10%;" /></span>California
-                        </h4>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
-    </div>
-</section>
-
-<section class="pt-5 pb-5" style="background-color:#fcfaee;">
-    <div style="background-image: url('assets/imgs/wild.png');  background-repeat: no-repeat;    background-size: cover;">
-        <div class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="assets/imgs/gal/1.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/2.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/3.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/4.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/5.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/6.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/7.jpg" class="img-responsive " alt="" /></li>
-                    <li class="splide__slide"><img src="assets/imgs/gal/8.jpg" class="img-responsive " alt="" /></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<script>
-    var splide = new Splide('.splide', {
-        type: 'loop',
-        perPage: 7,
-        perMove: 1,
-    });
-
-    splide.mount();
-</script> -->
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marck+Script&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
 <style>
-.h1 {
-    /* padding-top: 24%;
-    padding-left: 2%;
-     padding-bottom: 0; */
-      color: white;
-    font-size: 2.5rem;
+    .no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-}
+    .bg-image {
+        position: relative;
+    }
 
-.p1 {
-    /* padding-top: 0;
-    padding-left: 2%; */
-    color: white;
-    font-family: 'Lato';
-    font-size: .950em;
-}
+    .bg-image img {
+        position: absolute;
+        left: 0;
+        top: 0;
 
-.h2 {
-    /* padding-top: 21%;
-    padding-left: 79%;
-     padding-bottom: 0; */
-     color: white;
-    font-size: 2.5rem;
-}
+        z-index: -1;
+    }
 
-.p2 {
-    /* padding-top: 0;
-    padding-left: 79%; */
-    color: white;
-    font-family: 'Lato';
-    font-size: .950em;
-}
+    .text-over-image {
+        position: relative;
+        z-index: 1;
 
-.bb {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-30%, -50%);
-    color: white;
-    text-align: start;
-    z-index: 1;
-    opacity: 1;
-    width:50%;
+        font-family: 'Lato';
+
+        font-size: 60px;
+        font-weight: bold;
+        padding-left: 40px;
 
 
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    }
 
+    .button {
+        background-color: black;
 
-}
-.scroll {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: black;
-}
-.text-overlay:hover {
-    background-color: rgba(30, 31, 33, 0.5);
-   
-}
-.text-overlay {
-    position: relative;
+    }
+
+    .button:hover {
+        background-color: black;
+    }
+    .swiper-container {
     width: 100%;
-    height: 100vh;
-    background-size: 100% 100%;
-    border-radius: 25px;
-    background-attachment: fixed;
-    transition-delay: .2s;
-
+    height: 500px; /* Adjust height as needed */
+    
 }
 
-
-
-.text-overlay:hover .bb {
+.swiper-slide img {
+    width: 100%;
     display: block;
-    opacity: 1;
-  }
-
-
-.one {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/1.webp');
-    background-size: 100% 100%;
-    border-radius: 25px;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
 }
 
-.two {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/13.jpg');
-    background-size: 100% 100%;
-    border-radius: 25px;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+.swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+        }
 
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-}
-
-.three {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/14.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-
-}
-
-.four {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/2.jpeg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-
-}
-
-.five {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/n8.avif');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-}
-
-.six {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/n8.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-
-}
-
-.seven {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/n5.avif');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-
-}
-
-.eight {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/n6.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-
-}
-
-
-.nine {
-    width: 98%;
-    height: 100vh;
-    background-image: url('assets/photos/n9.jpg');
-    background-size: 100% 100%;
-    margin: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-    border-radius: 25px;
-    background-attachment: fixed;
-    /* margin:2rem; */
-
-}
-
-.video-header {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.1s ease;
-}
-
-.video-header video {
-    background: brown;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-
-.cursive {
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 1.6rem;
-    background: #F7F2EE;
-    padding-top: 97vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 33vw;
-
-
-}
-
-.image {
-    height: 7vh;
-    width: 100px;
-    margin-left: 5vh;
-
-}
-
-img {
-    width: 4vw;
-    height: inherit;
-    margin: 0px;
-    padding: 0px;
-
-}
 </style>
 
 
-<!-- ------------------------------------------------------------------------------ -->
-
-<section class="video-header" id="videoHeader">
+<section class="video-header" >
     <video src="<?php echo base_url('assets/vids');?>/leisure.mp4" autoplay loop playsinline muted></video>
 </section>
-<div class="text-center cursive">
-    TRAVEL HERE THIS YEAR......
-    <span class="image"> <img src="assets/imgs/fav.png" alt="" height=7vh; width=7vw;></span>
+
+
+<div class="container-fluid no-padding bg-image pt-5 pb-5 " style="position:relative;margin-bottom:300px;margin-top:90vh;">
+    <img src="assets/img/Ellipsels.png" style="width:280px;height:600px;padding:0 !important;" alt="Background Image">
+    <div class="text-over-image text-center" style="
+ ">
+        <h2 style="font-size: 60px;font-weight:bold;font-family:'Lato';"> Welcome to Good Earth Travel Group</h2>
+
+    </div>
+    <div class="" style="position: relative;">
+    <img class="img-fluid" src="assets/img/curved text.png" alt="" style=" left: 0; right: 0;padding:0; ">
 </div>
-<div class="scroll">
-    <div class="one">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h2">Kangaroo Beach</h2>
-                <pre class="p2">Roos, roos and more roos! </pre>
-            </div>
-        </div>
+    <div class="" style="margin-bottom: -30px;">
+        <p class="text-center" style="font-family: 'Lato';font-size:18px;font-weight:600;color:black;"> Where the art of travel meets the essence of indulgence. Prepare to be whisked away on a journey of discovery, <br /> where every destination is a masterpiece waiting to be explored. From the sun-drenched shores of tropical paradises <br /> to the rugged beauty of mountain retreats, our carefully curated selection of experiences invites you to immerse <br /> yourself in a world of leisure and luxury. Whether you're craving relaxation or seeking adrenaline-pumping <br /> adventures, our diverse range of destinations offers something for every traveller.</p>
     </div>
-    <div class="two">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h1">Caves Beach</h2>
-                <pre class="p1">Caves Beach is located on the  
-Swansea peninsula between Lake Macquarie
-and the Pacific Ocean.</pre>
-            </div>
-        </div>
-    </div>
-    <div class="three">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h2">Jervis Bay</h2>
-                <pre class="p2">White sand, crystal clear waters and
-whale watching at Jervis Bay </pre>
-            </div>
-        </div>
-    </div>
-    <div class="four">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h1">Scooba Diving</h2>
-                <pre class="p1">Swim with australian sea animals </pre>
-            </div>
-        </div>
-    </div>
-    <div class="five">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h2">Melbourene </h2>
-                <pre class="p2">Explore Art, museums & Royal
-Botanic Gardens in Melbourene </pre>
-            </div>
-        </div>
-    </div>
-    <div class="six">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h1">Night Light</h2>
-                <pre class="p1">Performing arts theater,Bennelong Point </pre>
-            </div>
-        </div>
-    </div>
-    <div class="seven">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h2">Opera House</h2>
-                <pre class="p2">Performing arts theater,Bennelong Point </pre>
-            </div>
-        </div>
-    </div>
-    <div class="eight">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h1">Caves Beach</h2>
-                <pre class="p1">Caves Beach is located on the Swansea peninsula   
-between Lake Macquarie and the Pacific Ocean.</pre>
-            </div>
-        </div>
-    </div>
-    <div class="nine">
-        <div class="text-overlay">
-            <div class="bb">
-                <h2 class="h2">Victoria Market</h2>
-                <pre class="p2"> Wide variety of fresh, quality produce 
-& specialty shopping.</pre>
-            </div>
-        </div>
-    </div>
+   
 
 
-
+    
 </div>
+
+
+
+
+
+<section style="position: relative;">
+
+    <div class="container pt-5 pb-5">
+
+    <div class="row">
+    <div class="col-md-6 offset-md-6">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 30px; left: -55px; width: 100px; height: 100px;">
+                <img src="assets/img/Group 27.png" alt="" style="height: 95px; width: 95px;">
+            </div>
+            <div class="text-end">
+                <p style="font-family: 'Lato'; color: black; font-size: 18px; font-weight: 600;padding-top: 80px;">Unwind in luxurious accommodations, savour exquisite cuisine, and delve into the rich tapestry of cultures that await you. Let us be your guide as you  traverse the globe, uncovering hidden gems and creating cherished  memories along the way. With personalized itineraries tailored to your  desires, is your gateway to unparalleled travel experiences. Join us as we  redefine leisure travel and embark on a journey of discovery, one  extraordinary destination at a time.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-around">
+            <div class="col-md-3">
+                <img src="assets/img/cards/aus.png" class="img-fluid" alt="Image 1" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/nz.png" class="img-fluid" alt="Image 2" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/usa.png" class="img-fluid" alt="Image 3" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/can.png" class="img-fluid" alt="Image 4" style="height: 290px;width:238px;">
+            </div>
+        </div>
+        <div class="row pt-4 justify-content-around">
+
+            <div class="col-md-3">
+                <img src="assets/img/cards/uk.png" class="img-fluid" alt="Image 1" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/italy.png" class="img-fluid" alt="Image 2" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/france.png" class="img-fluid" alt="Image 3" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/spain.png" class="img-fluid" alt="Image 4" style="height: 290px;width:238px;">
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-3">
+                <img src="assets/img/cards/greece.png" class="img-fluid" alt="Image 1" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/turkey.png" class="img-fluid" alt="Image 2" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/sz.png" class="img-fluid" alt="Image 3" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/singapore.png" class="img-fluid" alt="Image 4" style="height: 290px;width:238px;">
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-3">
+                <img src="assets/img/cards/indonesia.png" class="img-fluid" alt="Image 1" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/japan.png" class="img-fluid" alt="Image 2" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/vietnam.png" class="img-fluid" alt="Image 3" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/phil.png" class="img-fluid" alt="Image 4" style="height: 290px;width:238px;">
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-3">
+                <img src="assets/img/cards/thai.png" class="img-fluid" alt="Image 1" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/uae.png" class="img-fluid" alt="Image 2" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/africa.png" class="img-fluid" alt="Image 3" style="height: 290px;width:238px;">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/cards/other.png" class="img-fluid" alt="Image 4" style="height: 290px;width:238px;">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section style="background-color: white;">
+    <div class="container pt-5 pb-5 text-center">
+        <h2 style="font-family:'Lato';font-size:40px;font-weight:bold;">We <span style="font-family: 'Marck Script';color:#F78F1E;font-weight:400;">Offer</span></h2>
+        <div class="row justify-content-around text-start pt-5">
+            <div class="col-md-4 col-6 row ">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+                    <img class="img-fluid" src="assets/img/11.png" alt="" style="height: 85px;width:89px;">
+                </div>
+                <div class="col-md-8 col-8">
+                    <h2 style="font-size:26px;">Best Destinations</h2>
+                    <p style="text-align: left;">Discover your dream destinations with us.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-6 row">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+                    <img class="img-fluid" src="assets/img/12.png" alt="" style="height: 60px;width:89px;">
+                </div>
+                <div class="col-md-8 col-8">
+                    <h2 style="font-size:26px;">Cruise Holidays</h2>
+                    <p style="text-align: left;">Set sail for adventure with our cruise holidays.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-6 row">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+
+                    <img class="img-fluid" src="assets/img/13.png" alt="" style="height: 78px;width:89px;">
+                </div>
+                <div class="col-md-8 col-8">
+                    <h2 style="font-size:26px;white-space: nowrap;">Adventure Holidays</h2>
+                    <p style="text-align: left;">Embark on thrilling adventures with expert guides. </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-6 row pt-5">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+                    <img src="assets/img/14.png" alt="" style="height: 80px;width:89px;">
+
+                </div>
+                <div class="col-md-8 col-8 pt-5">
+                    <h2 style="font-size:26px;">Best Experiences</h2>
+                    <p style="text-align: left;">Create unforgettable memories with our curated experiences.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-6 row pt-5">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+
+                    <img src="assets/img/15.png" alt="" style="height: 80px;width:70px;">
+
+                </div>
+                <div class="col-md-8 col-8 pt-5">
+                    <h2 style="font-size:26px;">Family Vacations</h2>
+                    <p style="text-align: left;">Make magical memories together on family-friendly getaways.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-6 row pt-5">
+                <div class="col-md-4 col-4" style="align-items: center; display:flex;">
+                    <img src="assets/img/16.png" alt="" style="height: 72px;width:80px;">
+
+                </div>
+                <div class="col-md-8 col-8 pt-5">
+                    <h2 style="font-size:26px;white-space: nowrap;">Honeymoon Getaways</h2>
+                    <p style="text-align: left;">Celebrate love in paradise with our romantic retreats.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="pt-5 pb-5" style="background-color:white; position:relative;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h2 style="color: #F78F1E;font-size:80px;font-family:'Marck Script';">Talk<span style="color: black;font-size:48px; font-family:'Lato';font-weight:bold;"> To us </span></h2>
+                <p style="color:black;font-family:'Lato';font-size:18px;font-weight:500;justify-content:center">To get started, simply reach out to us via  phone, email, or WhatsApp with your travel  requirements. Rest assured, our team will  promptly respond to your inquiry and can even arrange a personalized meeting at your convenience. Let us take care of the details, so you can focus on enjoying your dream holiday</p>
+                <a href="<?php echo base_url('Contact'); ?>">
+                <button class="btn " style="background-color: black;color:#fff;font-family:'Lato';">Lets Connect</button>
+                </a>
+            </div>
+            <div class="col-md-8 col-sm-12 d-flex align-items-center justify-content-center">
+            <div class="swiper-container myVerticalSwiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="assets/photos/sw1.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw2.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw3.jpg" class="img-fluid" alt="Image 4"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw4.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw5.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw6.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/sw7.jpg" class="img-fluid" alt="Image 4"></div>
+        <div class="swiper-slide"><img src="assets/photos/111.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/112.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/113.jpg" class="img-fluid" alt="Image 4"></div>
+        <div class="swiper-slide"><img src="assets/photos/114.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/115.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/116.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/117.jpg" class="img-fluid" alt="Image 4"></div>
+        <div class="swiper-slide"><img src="assets/photos/118.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/119.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/110.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="assets/photos/1111.jpg" class="img-fluid" alt="Image 4"></div>
+        <div class="swiper-slide"><img src="assets/photos/1112.jpg" class="img-fluid" alt="Image 2"></div>
+        <div class="swiper-pagination" style="margin-right: -20px;"></div>
+    </div>
+</div>
+    </div>
+
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var videoHeader = document.getElementById('videoHeader');
-    var video = videoHeader.querySelector('video');
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+        // Initialize Swiper
+        var swiper = new Swiper(".myVerticalSwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            allowTouchMove: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect: "fade", // Initially setting to fade effect
+            fadeEffect: {
+                crossFade: true
+            },
+            mousewheel: true, // Enable mousewheel control
+        });
 
-    window.addEventListener("scroll", function() {
-        var scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window
-            .innerHeight);
-        var scaleSize = 1 -
-            scrollPercentage; // Example: reducing the scale to 0 when scrolled to the bottom
+        // Custom GSAP effect for overlapping slides
+        swiper.on('slideChangeTransitionStart', function() {
+            let currentSlide = swiper.slides[swiper.activeIndex];
+            let previousSlide = swiper.slides[swiper.previousIndex];
 
-        // Update the scale using transform
-        videoHeader.style.transform = 'scale(' + scaleSize + ')';
+            gsap.fromTo(currentSlide, 
+                {opacity: 0}, 
+                {opacity: 1, duration: 1, ease: "power2.inOut"}
+            );
+
+            gsap.fromTo(previousSlide, 
+                {opacity: 1}, 
+                {opacity: 0, duration: 1, ease: "power2.inOut"}
+            );
+        });
+
+        // Synchronize slider with scroll event using ScrollTrigger
+        gsap.utils.toArray('.swiper-slide').forEach((slide, index) => {
+            ScrollTrigger.create({
+                trigger: slide,
+                start: "top top",
+                end: "bottom bottom",
+                onEnter: () => swiper.slideTo(index),
+                onEnterBack: () => swiper.slideTo(index)
+            });
+        });
     });
-
-    // Initialize AOS (Animate On Scroll) library
-    AOS.init();
-});
 </script>
+
