@@ -123,10 +123,10 @@ s0.parentNode.insertBefore(s1,s0);
       <div class="col-sm-4  d-flex justify-content-center justify-content-sm-end">
         <div class="nav " style=" ">
           <a href="<?php echo base_url('business'); ?>" style="color: #000000;font-weight:500;font-size:14px">BUSINESS &nbsp;|&nbsp;&nbsp;</a>
-          <a href="<?php echo base_url('leusure'); ?>" style="color: #000000;font-weight:500;font-size:14px">LEISURE &nbsp;|&nbsp;&nbsp;</a>
+          <a href="<?php echo base_url('Leisure'); ?>" style="color: #000000;font-weight:500;font-size:14px">LEISURE &nbsp;|&nbsp;&nbsp;</a>
 
           <a href="<?php echo base_url('india'); ?>" style="color: #000000;font-weight:500;font-size:14px">INDIA &nbsp;|&nbsp;&nbsp;</a>
-          <a href="<?php echo base_url('austrailia'); ?>" style="color: #000000;font-weight:500;font-size:14px">AUSTRALIA </a>
+          <a href="<?php echo base_url('Australia'); ?>" style="color: #000000;font-weight:500;font-size:14px">AUSTRALIA </a>
         </div>
       </div>
     </div>
