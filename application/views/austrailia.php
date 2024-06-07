@@ -163,6 +163,97 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     
     overflow-y: auto;
   }
+  @media (max-width: 768px) {
+    .tichead {
+        font-size: 18px !important;
+        margin-top: 4% !important;
+        visibility: hidden;
+    }
+
+    .ticcon {
+      padding-top: 30% !important;
+        /* padding: 4% !important; */
+        font-size: 11px !important; /* Adjust font size for better fit */
+    }
+
+    .tic {
+        background-image: url('assets/imgs/aus-mobile.jpg') !important; /* Mobile background image */
+        background-size: cover; /* Ensure the image covers the entire container */
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
+        height: 100vh; /* Increase container height */
+    }
+    .collection .content{
+      width: 22rem;
+      height: 25rem;
+    }
+    .text-content h3 {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 567px) {
+    .tichead {
+        font-size: 16px !important; /* Further reduce font size for smaller screens */
+        margin-top: 4% !important;
+        visibility: hidden;
+    }
+
+    .ticcon {
+        padding-top: 30% !important;
+        /* padding: 4% !important; */
+        font-size: 11px !important; /* Further adjust font size */
+    }
+
+    .tic {
+        background-image: url('assets/imgs/aus-mobile.jpg'); /* Mobile background image */
+        background-size: cover; /* Ensure the image covers the entire container */
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
+        height: 100vh; /* Increase container height */
+    }
+    .collection .content{
+      width: 22rem;
+      height: 25rem;
+    }
+    .text-content h3 {
+        font-size: 16px; 
+    }
+}  
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 50%; /* Center horizontally */
+    transform: translateX(-150%); /* Move it to the left */
+    top:97%;
+}
+
+.swiper-button-next {
+    right: 50%; /* Center horizontally */
+    transform: translateX(150%); /* Move it to the right */
+    top:97%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px;
+}
+  
 </style>
 <section class="video-header">
   <video src="<?php echo base_url('assets/vids');?>/aus.mp4" autoplay loop playsinline muted></video>
@@ -177,11 +268,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 <section style="margin-top:90vh;" class="ptb-60">
   
-<div class="container " style=" background-image: url('assets/imgs/aust.png'); background-repeat: no-repeat;background-size:cover;background-position: center; border-radius: 20px;" >
+<div class="container tic" style=" background-image: url('assets/imgs/aust.png'); background-repeat: no-repeat;background-size:cover;background-position: center; border-radius: 20px;" >
     
         <div class="p-sm-5  p-md-3 p-lg-1 ptb-lg-2">
-        <h6 class="text-center"style="font-weight: 600;color:White;margin-top:7%;display:flex; align-items:flex-start;margin-left:5%;font-size:24px;">The limitless Australian experience </h6>        
-        <div class=" " style="font-weight: 400;font-family: 'Lato',sans-serif;padding:6%;padding-top:12px;">
+        <h6 class="text-center tichead"style="font-weight: 600;color:White;margin-top:7%;display:flex; align-items:flex-start;margin-left:5%;font-size:24px;">The limitless Australian experience </h6>        
+        <div class="ticcon " style="font-weight: 400;font-family: 'Lato',sans-serif;padding:6%;padding-top:12px;">
         Get ready to embark on an unforgettable adventure in Australia! Each region boasts its own unique landscapes, wildlife, and stories. From vibrant cityscapes to pristine beaches, every trip to Australia offers a fresh perspective and creates lasting  memories. Planning your dream vacation is easier than ever. Imagine Australia like a captivating travel brochure - full of possibilities waiting to be torn out and brought to life. We at Good Earth Travel Group are your one-stop shop for crafting your perfect Australian itinerary.
          <br><br/>
          Think of us as the "stamp" that validates your passport for adventure. We'll help you navigate this incredible country, ensuring your trip is as diverse and dynamic as Australia itself. Browse our website for a glimpse into the endless possibilities that await you. Get a sneak peek at the stunning landscapes, unique wildlife encounters, and countless adventures that Australia has to offer.<br><br>
@@ -199,6 +290,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 </section>
 <section style="background:#F7F2EE">
+
   <div class="container">
     <div class="row">
       <div class="col-sm-8 offset-sm-2">
@@ -209,20 +301,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
 
     <div class="row">
-      <div class="col-sm-12 grid-container" id="masonry-grid">
-        <div class="grid-item">
+      <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 95%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Natural Marvel F1.png');?>" alt="Description for Image 1"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-                <p class="m-0"><b class="pb-3 " style="font-weight: 700;">The Natural Marvels</b></p>
+                <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">The Natural Marvels</b></p>
                 <p style="font-weight: 500;">
                   “Explore the vast Australian Outback, characterized by its rugged landscapes, expansive deserts, and iconic landmarks such as Uluru (Ayers Rock) and Kata Tjuta (The Olgas). Witness the breathtaking beauty of the Great Barrier Reef, the world's largest coral reef system"
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#first-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#first-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
               </div>
           </div>
         </div>
+      </div>
          <!-- modal -->
         <div class="modal fade" id="first-modal" tabindex="-1" aria-labelledby="first-modalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered " style="">
@@ -244,20 +337,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Luxury Travel.png');?>" alt="Description for Image 2"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
             <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Luxury Travel</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Luxury Travel</b></p>
                 <p style="font-weight: 500;">
                   “Embark on a private helicopter tour of Uluru and Kata Tjuta, enjoying panoramic views of these iconic landmarks before indulging in a gourmet picnic in the desert. Unwind in a luxury eco-retreat in the heart of the Blue Mountains, where secluded cabins and infinity pools.  "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#second-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#second-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
         <!-- modal -->
         <div class="modal fade" id="second-modal" tabindex="-1" aria-labelledby="second-modalLabel" aria-hidden="true">
@@ -278,20 +372,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
         <!-- modal -->
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Honeymoon Getaway F3.png');?>" alt="Description for Image 3"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Honeymoon Gateway</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Honeymoon Gateway</b></p>
                 <p style="font-weight: 500;">
                   “Escape to the pristine beaches of the Whitsunday Islands, where luxury resorts offer seclusion and romance amidst crystal-clear waters and swaying palm trees. Retreat to a private villa in the heart of the Daintree Rainforest, where candlelit dinners and spa treatments await in a secluded tropical paradise.  "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#third-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#third-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
 
          <!-- modal -->
@@ -314,20 +409,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Heritage.png');?>" alt="Description for Image 4"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Heritage</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Heritage</b></p>
                 <p style="font-weight: 500;">
                   “Step back in time at Port Arthur Historic Site, a UNESCO World Heritage site that preserves the ruins of a former penal colony and offers insight into Australia's convict past. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#fourth-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#fourth-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
           
             <!-- modal -->
         <div class="modal fade" id="fourth-modal" tabindex="-1" aria-labelledby="fourth-modalLabel" aria-hidden="true">
@@ -349,20 +445,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Exhibition F5.png');?>" alt="Description for Image 5"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Exhibition</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Exhibition</b></p>
                 <p style="font-weight: 500;">
                   “Immerse yourself in the vibrant arts scene of Melbourne, where galleries and museums showcase contemporary Australian art alongside international exhibitions. Discover indigenous culture and history at the Aboriginal Cultural Centre in Alice Springs, "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#five-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#five-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
          <!-- modal -->
          <div class="modal fade" id="five-modal" tabindex="-1" aria-labelledby="five-modalLabel" aria-hidden="true">
@@ -384,20 +481,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Culinary and Wine F6.png');?>" alt="Description for Image 6"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Culinary & Wine</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Culinary & Wine</b></p>
                 <p style="font-weight: 500;">
                   “Indulge in a culinary journey through Melbourne's vibrant food scene, where diverse cultures converge to create innovative and mouthwatering dishes. Sample award-winning wines in the renowned wine regions of Margaret River, Barossa Valley, and Hunter Valley, where vineyards sprawl across picturesque landscapes. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#six-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#six-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
          
          <!-- modal -->
          <div class="modal fade" id="six-modal" tabindex="-1" aria-labelledby="six-modalLabel" aria-hidden="true">
@@ -419,20 +517,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-
-        <div class="grid-item">        
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">        
           <img src="<?php echo base_url('assets/imgs/Postcards/Cafe and Coffee  F7.png');?>" alt="Description for Image 7"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Café & Coffee</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Café & Coffee</b></p>
                 <p style="font-weight: 500;">
                   “Savor the perfect cup of coffee at Melbourne's iconic laneway cafes, known for their expertly brewed espresso and cozy atmosphere. Explore Sydney's bustling café culture, where waterfront establishments offer stunning views of the harbor alongside artisanal coffee blends and delectable pastries. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#seven-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#seven-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
          
          <!-- modal -->
          <div class="modal fade" id="seven-modal" tabindex="-1" aria-labelledby="seven-modalLabel" aria-hidden="true">
@@ -454,20 +553,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Beach Paradise F8.png');?>" alt="Description for Image 8"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Beach Paradise</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Beach Paradise</b></p>
                 <p style="font-weight: 500;">
                   “Relax on the pristine white sands of Whitehaven Beach, consistently ranked among the world's best beaches for its pure silica sand and turquoise waters. Dive or snorkel in the crystal-clear lagoons of the Ningaloo Coast, where vibrant coral reefs and marine life await just steps from the shore. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#eight-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#eight-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
         
          <!-- modal -->
          <div class="modal fade" id="eight-modal" tabindex="-1" aria-labelledby="eight-modalLabel" aria-hidden="true">
@@ -488,20 +588,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
         <!-- modal -->
 
-
-        <div class="grid-item">
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Adventure and Outdoor F9.png');?>" alt="Description for Image 9"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-weight: 500;">Adventure & Outdoor</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Adventure & Outdoor</b></p>
                 <p style="font-weight: 500;">
                   “Embark on a thrilling surfing adventure along the Gold Coast, known for its world-class waves and vibrant surf culture. Challenge yourself with a trek through the rugged terrain of Tasmania's Cradle Mountain, offering spectacular views and opportunities for bushwalking and wildlife spotting. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#nine-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#nine-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
          <!-- modal -->
          <div class="modal fade" id="nine-modal" tabindex="-1" aria-labelledby="nine-modalLabel" aria-hidden="true">
@@ -521,20 +622,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
         <!-- modal -->
-
-        <div class="grid-item">
+        
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Wildlife F10.png');?>" alt="Description for Image 10"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Wildlife</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Wildlife</b></p>
                 <p style="font-weight: 500;">
                   “Get up close and personal with kangaroos, koalas, and other native wildlife at wildlife sanctuaries and conservation parks scattered throughout Australia. Dive with whale sharks and manta rays on Ningaloo Reef, one of the few places in the world where you can swim alongside these majestic creatures in their natural habitat. "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#ten-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#ten-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
          <!-- modal -->
          <div class="modal fade" id="ten-modal" tabindex="-1" aria-labelledby="ten-modalLabel" aria-hidden="true">
@@ -554,20 +657,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
         <!-- modal -->
-
-        <div class="grid-item">
+       
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Urban Lifestyle.png');?>" alt="Description for Image 11"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Urban Lifestyle</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Urban Lifestyle</b></p>
                 <p style="font-weight: 500;">
                   “Experience the vibrant nightlife of Sydney, where rooftop bars, live music venues, and world-class restaurants come alive against the backdrop of the iconic Harbour Bridge and Opera House. Explore the eclectic neighbourhoods of Melbourne.  "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#elevan-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#elevan-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
          <!-- modal -->
          <div class="modal fade" id="elevan-modal" tabindex="-1" aria-labelledby="elevan-modalLabel" aria-hidden="true">
@@ -587,20 +692,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
         <!-- modal -->
-
-        <div class="grid-item">
+        
+        <div class="col-md-4 col-sm-12  grid-container" id="masonry-grid">
+        <div class="grid-item" style="width: 100%;">
           <img src="<?php echo base_url('assets/imgs/Postcards/Sports.png');?>" alt="Description for Image 12"
             class="img-sports">
           <div class="caption" style="background-color: #cccccc73;font-weight: 500;">
           <div>
-          <p class="m-0"><b class="pb-3 " style="font-weight: 700;">Sports</b></p>
+          <p class="m-0"><b class="pb-3 " style="font-weight: 700;font-size: 16px;">Sports</b></p>
                 <p style="font-weight: 500;">
                   “Immerse yourself in the excitement of AFL matches at iconic stadiums like the MCG and Adelaide Oval, where fast-paced action and passionate fans make for an unforgettable experience. Experience the thrill of cricket in Australia, whether it's attending a test match at the SCG or joining a casual game at a local park, cricket is ingrained in Australian culture.  "
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#twelve-modal" style="border: none;background-color:transparent">Read More...</button>
+                <button data-bs-toggle="modal" data-bs-target="#twelve-modal" style="border: none;background-color:transparent;color:#000;display:flex;justify-content: start;">Read More...</button>
                 </div>
           </div>
         </div>
+      </div>
 
          <!-- modal -->
          <div class="modal fade" id="twelve-modal" tabindex="-1" aria-labelledby="twelve-modalLabel" aria-hidden="true">
@@ -622,7 +729,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- modal -->
 
 
-      </div>
+      <!-- </div> -->
     </div>
 
   </div>
@@ -847,9 +954,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       
     </div>
   </div>
-  </div>
 </div>
-<div class="swiper-pagination"></div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
 </section>
           
 
@@ -897,7 +1006,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="col-lg-4 col-md-4 col-12">
             <div class="blog_cont">
               <div class="blog_img">
-                <img class="p-0" src="assets/img/Australia_Honeymooning.jpg">
+                <img class="p-0" src="assets/img/Australia_Honeymooning.png">
                 
               </div>
               <div class="blog_btm">
@@ -1028,26 +1137,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </script>
 <script>
  var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  slidesPerView: "auto",
-  
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 150,
-    modifier: 2.5,
-    slideShadows: true,
-  },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 150,
+        modifier: 2.5,
+        slideShadows: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    // Remove pagination
+    pagination: {
+        el: null,
+    },
+    // Add navigation
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
+
 </script>

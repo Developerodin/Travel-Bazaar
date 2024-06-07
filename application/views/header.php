@@ -50,7 +50,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
-  <!-- Start of Tawk.to Script
+  <!-- Start of Tawk.to Script -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
@@ -63,10 +63,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
-  </script> -->
+  </script>
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -76,7 +76,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
 
 
@@ -112,8 +112,8 @@ s0.parentNode.insertBefore(s1,s0);
     <div class="row v-center">
       <div class="col-sm-4">
         <p style="color:#000000; margin-bottom:0px; font-size:14px;font-weight:500;">
-          <i class="fa fa-phone font-11"></i> <span style="font-size:13px;color:#000000;font-weight:500;font-size:14px">+61 (03) 91110666</span> &nbsp;|&nbsp;
-          <i class="fa fa-envelope font-12" style="font-size:14px;font-weight:500;"></i> travel@travelbazaar.com.au
+          <i class="fa fa-phone font-11"></i> <span style="font-size:13px;color:#000000;font-weight:500;font-size:14px;color:black">+61 (03) 91110666</span> &nbsp;|&nbsp;
+          <i class="fa fa-envelope font-12" style="font-size:14px;font-weight:500;color:black;"></i> travel@travelbazaar.com.au
         </p>
       </div>
       <div class="col-sm-4 text-center">
@@ -123,10 +123,10 @@ s0.parentNode.insertBefore(s1,s0);
       <div class="col-sm-4  d-flex justify-content-center justify-content-sm-end">
         <div class="nav " style=" ">
           <a href="<?php echo base_url('business'); ?>" style="color: #000000;font-weight:500;font-size:14px">BUSINESS &nbsp;|&nbsp;&nbsp;</a>
-          <a href="<?php echo base_url('Leisure'); ?>" style="color: #000000;font-weight:500;font-size:14px">LEISURE &nbsp;|&nbsp;&nbsp;</a>
+          <a href="<?php echo base_url('leusure'); ?>" style="color: #000000;font-weight:500;font-size:14px">LEISURE &nbsp;|&nbsp;&nbsp;</a>
 
           <a href="<?php echo base_url('india'); ?>" style="color: #000000;font-weight:500;font-size:14px">INDIA &nbsp;|&nbsp;&nbsp;</a>
-          <a href="<?php echo base_url('Australia'); ?>" style="color: #000000;font-weight:500;font-size:14px">AUSTRALIA </a>
+          <a href="<?php echo base_url('austrailia'); ?>" style="color: #000000;font-weight:500;font-size:14px">AUSTRALIA </a>
         </div>
       </div>
     </div>

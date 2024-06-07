@@ -68,7 +68,34 @@
       background: transparent;
       color: #fff;
    }
-
+   @media (max-width: 768px) {
+      .us_span {
+         padding-left: 15px !important;
+      }
+      .sc {
+         min-width: 50px;
+      }
+      .but {
+         margin-bottom: 10px !important;
+      }
+      .address-text {
+         margin-bottom: 0.8rem !important;
+      }
+   }
+   @media (max-width: 576px) {
+      .us_span {
+         padding-left: 15px !important;
+      }
+      .sc {
+         min-width: 50px;
+      }
+      .but {
+         margin-bottom: 10px !important;
+      }
+      .address-text {
+         margin-bottom: 0.8rem !important;
+      }
+   }
   
 </style>
 <footer>
@@ -93,9 +120,10 @@
                </p>
             </a>
          </div>
-         <div class="col-sm-3  us_span" style="padding-left: 50px;padding-bottom: 60px;">
+         
+         <div class="col-md-3 col-6 us_span" style="padding-left: 50px;padding-bottom: 60px;">
             <h5>Useful Links</h5>
-            <div style="margin-top: 15px;padding-top:15px;"> <!-- Add margin-top to create space -->
+            <div style="margin-top: 15px;"> <!-- Add margin-top to create space -->
                <a class="mt-3" href="<?php echo base_url('business'); ?>">Business Travel</a>
             </div>
             <div style="margin-top: 15px;">
@@ -115,11 +143,11 @@
             </div>
          </div>
 
-         <div class="col-sm-3  ">
+         <div class="col-md-3  col-6">
             <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-               <div style="display:inline-block; min-width:200px;">
+               <div class="sc" style="display:inline-block; min-width:200px;">
                   <h5>Follow Us</h5>
-                  <div style="position:relative; background-image: url('assets/img/sign2.png');background-size:contain;background-repeat: no-repeat;background-position: center;top:25px;min-height: 250px;">
+                  <div style="position:relative; background-image: url('assets/img/sign2.png');background-size:contain;background-repeat: no-repeat;background-position: center;top:10px;min-height: 250px;">
 
 
                      <a class="mt-2 " href="https://www.facebook.com/goodearthtravel" style="position:absolute; top: 19px; left: 92px;">
@@ -137,7 +165,7 @@
                </div>
             </div>
          </div>
-         <div class="col-sm-3">
+         <div class="col-sm-3 mb-sm-2">
             <h5>Subscribe for Special Offers </h5>
             <form method="post" action="Welcome/footer_form">
                <input type="text" class="subscribe_input" name="name" placeholder="Full Name" style="font-family: 'Lato';" />
@@ -147,7 +175,7 @@
                <br />
 
                <input type="text" class="subscribe_input" name="number" placeholder="Contact No." style="font-family: 'Lato';" />
-               <button type="submit" class="btn-subscribe" style="font-family: 'Lato';font-size:16px;">Submit</button>
+               <button type="submit" class="btn-subscribe but" style="font-family: 'Lato';font-size:16px;background-color:#f78f1e;border:none;color:white;">Submit</button>
             </form>
          </div>
       </div>

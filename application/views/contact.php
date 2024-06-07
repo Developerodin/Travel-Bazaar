@@ -6,17 +6,30 @@
 		text-align: center;
 		font-family: arial;
 	}
+	@media (max-width: 768px) {
+    .cimg {
+        padding-top: 116px !important; /* Adjust the value as needed to match the height of your navbar */
+    }
+	.contact {
+		margin: 1rem !important; 
+	}
+	.contact-title {
+		padding-left: 27% !important;
+	}
+	
+}	
+
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 
 
 <section class="main p-0">
-	<img class="p-0" src="assets/imgs/contact_bg.jpg" width="100%" alt="">
+	<img class="img-fluid  p-0 cimg" src="assets/imgs/contact_bg.jpg" width="100%"  alt="">
 </section>
 <section class="form-group" style="background-color: antiquewhite;">
 
 	<div class="main mt-5 text-start" style="padding: 0 5%;">
-		<h2 style="line-height: 1.5;font-weight: 600;color: black; ">
+		<h2 style="line-height: 1.5;font-weight: 400;color: black; ">
 			Do you have any
 			questions?<br>
 			Please message us & we will clarify your doubts.
@@ -25,7 +38,7 @@
 		<div class="card ">
 			<div class="contact-area section-padding pt-20 ">
 				<div class="">
-					<div class="row" style="margin: 4rem;justify-content: space-around;">
+					<div class="row  contact" style="margin: 4rem;justify-content: space-around;">
 						<div class="col-md-5">
 							<div class="contact-message ">
 
@@ -33,16 +46,17 @@
 									<div class="row">
 										<div class="col-md-12 mt-3 ">
 											<input name="Name"
-												style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
+												style="width:100%;padding: 14px 32px;border: none;background: gainsboro;border-radius:4px"
 												placeholder="Name *" type="text" required />
 										</div>
 										<div class="col-md-12 mt-3">
 											<input name="phone"
-												style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
+												style="width:100%;padding: 14px 32px;border: none;background: gainsboro;border-radius:4px"
 												placeholder="Phone *" type="tel" required />
 										</div>
 										<div class="col-md-12 mt-3">
-											<select name="Country *" style="width: 100%;padding:20px 28px;border:none;  color:#88888d;  background: gainsboro;"  required>
+										<div style="width: 100%; padding:14px 28px; border:none; color:#88888d; background: gainsboro;border-radius:4px">
+											<select name="Country *" style="width: 100%; background: gainsboro; border: none; outline: none;color:#88888d; " required>
 											<option value=" disabled selected hidden">Country *</option>
 											     <option value="United States">United States</option>
 
@@ -285,21 +299,22 @@
 												<option value="Zambia">Zambia</option>
 												<option value="Zimbabwe">Zimbabwe</option>
 											</select>
+										</div>		
 										</div>
 										<div class="col-md-12 mt-3">
 											<input name="Email"
-												style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
+												style="width:100%;padding: 14px 32px;border: none;background: gainsboro;border-radius:4px"
 												placeholder="Email *" type="email" required />
 										</div>
 										<div class="col-md-12 mt-3">
 											<input name="contact_subject"
-												style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
+												style="width:100%;padding: 14px 32px;border: none;background: gainsboro;border-radius:4px"
 												placeholder="Subject *" type="text" />
 										</div>
 										<div class="col-md-12 mt-3">
 											<div class="contact2-textarea text-center">
 												<textarea placeholder="Message "
-													style="width:100%;padding: 20px 32px;border: none;background: gainsboro;"
+													style="width:100%;padding: 14px 32px;border: none;background: gainsboro;border-radius:4px"
 													name="Message" row="4" class="form-control2" ></textarea>
 											</div>
 											<div class="contact-btn mt-5">
@@ -323,10 +338,10 @@
 									Contact Us
 								</h2>
 								<div class="row">
-									<div class="col-md-2 text-center" style="display:flex;    align-items: center;    justify-content: center; ">
+									<div class="col-md-2 col-2 text-center" style="display:flex;    align-items: center;    justify-content: center; ">
 									<i class="fa fa-map-marker" style="font-size: xx-large;color: black;"></i>
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-10 col-10 ">
 										<h6 class="m-0"
 											style="font-weight: 600;color: black; ">
 											Address</h6>
@@ -335,19 +350,19 @@
 											Mount Waverley VIC 3149</p>
 											</a>
 									</div>
-									<div class="col-md-2 text-center mt-3"style="display:flex;    align-items: center;    justify-content: center; ">
+									<div class="col-md-2 col-2 text-center mt-3"style="display:flex;    align-items: center;    justify-content: center; ">
 										<i class="fa fa-envelope" style="font-size: x-large;color: black;"></i>
 									</div>
-									<div class="col-md-10 mt-3">
+									<div class="col-md-10 col-10 mt-3">
 										<h6 class="m-0"
 											style="font-weight: 600;color: black; ">
 											Email</h6>
 										<a href="mailto:travel@travelbazaar.com.au"><p style="font-size: 16px;">travel@travelbazaar.com.au</p></a>
 									</div>
-									<div class="col-md-2 text-center mt-3"style="display:flex;    align-items: center;    justify-content: center; ">
+									<div class="col-md-2 col-2 text-center mt-3"style="display:flex;    align-items: center;    justify-content: center; ">
 										<i class="fa fa-phone" style="font-size: xx-large;color: black;"></i>
 									</div>
-									<div class="col-md-10 mt-3">
+									<div class="col-md-10 col-10 mt-3">
 									<h6 class="m-0"
 											style="font-weight: 600;color: black; ">
 											Phone No.</h6>

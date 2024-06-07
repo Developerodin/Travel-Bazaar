@@ -30,7 +30,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     justify-content: center;
            width: 100%;
            height: 100%;
-           margin-left: -3%;
+         
             
        }
    .popup {
@@ -85,9 +85,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     z-index: 1;
     position: absolute;
-    margin-left: -70px !important;
-    margin-top: -50px !important;
-    margin-bottom: -20px !important;
+    margin-left: -70px;
+    margin-top: -50px ;
+    margin-bottom: -20px ;
 
     transition: transform 0.8s linear !important;
     transform: scale(1.1) !important;
@@ -235,27 +235,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     .testi_lady_img {
       display: none;
     }
-    .is-visible .com>div {
-      margin-top: 20px !important;
+    /* .is-visible .com>div {
+      margin-top: 20px !important ;
       width: 240px !important;
       height: 210px !important;
       margin: 50%;
-      margin-bottom: 20px !important;
+      margin-bottom: 20px ;
 
-      /* margin-top: -25px !important;
-    margin-bottom: -10px !important; */
+     
 
-    }
+    } */
 
     /* .is-visible .conn {
     margin-top: 10px !important;
   } */
     .is-visible .para {
-      font-size: 9px !important;
+      font-size: 12px !important;
     }
 
     .is-visible .au {
-      font-size: 11px !important;
+      font-size: 14px !important;
     }
 
     .is-visible .st {
@@ -345,26 +344,61 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   }
 
 @media only screen and (max-width: 768px) {
+  .is-visible .com>div {
+      margin-top: 0px !important ;
+      width: 302px !important;
+      height: 289px !important;
+      margin: 0% !important;
+      margin-bottom: 0px !important;
+  }
   
   .earth-container {
-    justify-content: center; 
-    margin-left: 3%;
-    display: none;
+    
+    
+    
+
+    
+    
+  }
+  .welcome {
+    padding-top: 120% !important;
+  }
+  .abt_img {
+    padding-top: 20px;
   }
   
-  #popup {
-    left: 50%; 
-    top: 50%; 
+  .popup {
+    left: 50%;
+    top: 12%;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    
   }
+
+  .popup img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: 150px !important;
+    height: 100px !important;
+  }
+  .testi_slider {
+    margin-top: -60px !important;
+  }
+  .testi_titl:after {
+    
+    left: 41.5% !important;
+    
+  }
+ 
 }
+
+
 
 @media only screen and (max-width: 576px) {
   
   .earth-container {
-    justify-content: flex-start; 
-    display: none;
+    
+   
+    
   }
   
   #popup {
@@ -373,13 +407,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     transform: translate(-50%, -50%);
     padding: 10px;
   }
+  .welcome {
+    padding-top: 120% !important;
+  }
+   .abt_img {
+    padding-top: 20px !important;
+  }
+  .testi_titl:after {
+    
+    left: 41.5% !important;
+    
+  }
+ 
 }
 
 @media only screen and (max-width: 320px) {
   
   .earth-container {
-    justify-content: flex-start; 
-    display: none;
+    
   }
   
   #popup {
@@ -536,14 +581,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <div class="row">
       <div class="col-sm-12">
         <br /><br /><br />
-        <h5 class="mt-30  " style="color: #f78f1e;font-size:32px;font-family:'Lato',sans-serif;margin-left: -10px;">Who We Are</h5>
+        <h5 class="mt-30  welcome" style="color: #f78f1e;font-size:32px;font-family:'Lato',sans-serif;margin-left: -10px;">Who We Are</h5>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12 ">
         <div class="row">
           <div class="col-sm-6">
-            <h3 class=" text-justify" style="margin-top: -4px;font-size: 20px;"> Welcome to Good Earth Travel Group (GETG), an esteemed travel enterprise established in 2000, renowned for delivering outstanding travel services. </h3>
+            <h3 class=" text-justify " style="margin-top: -4px;font-size: 20px;"> Welcome to Good Earth Travel Group (GETG), an esteemed travel enterprise established in 2000, renowned for delivering outstanding travel services. </h3>
             <p class="font-15 text-justify" style="font-weight: 400;font-size:15px;" >  With two centralised offices in Australia and India, we proudly serve clients worldwide. 
 
             At GETG, we house a diverse portfolio of specialised brands, including Travel Bazaar, India Infinite, OZ Infinite, and Signature Representation. Leveraging our strong relationships with major international and domestic airlines, hotels, and travel suppliers, we ensure unparalleled access and value for our clients.<br><br>
@@ -799,24 +844,23 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <div id="india-popup" class="popup">
   <a href="https://www.travelbazaar.com.au/india" >
-    <img src="assets/imgs/india_1.jpg"  alt="India">
+    <img src="assets/imgs/india_1.jpg" class="img-fluid"  alt="India">
   </a>
 </div>
 
 <div id="australia-popup" class="popup">
   <a href="https://www.travelbazaar.com.au/Australia" >
-    <img src="assets/imgs/australia_1.jpg" alt="Australia">
+    <img src="assets/imgs/australia_1.jpg" class="img-fluid" alt="Australia">
   </a>
 </div>
 
 <div id="leisure-popup" class="popup">
   <a href="https://www.travelbazaar.com.au/Leisure" >
-    <img src="assets/imgs/leisure_1.jpg"  alt="Leisure">
+    <img src="assets/imgs/leisure_1.jpg" class="img-fluid" alt="Leisure">
   </a>
 </div>
 
-        <button id="start-button">START</button>
-        <button id="stop-button">STOP</button>
+       
     </div>
 
 </div>
@@ -1567,6 +1611,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     pagination: true,
 
     focus: 'center',
+    breakpoints: {
+    768: { // You can adjust the breakpoint value as needed
+      perPage: 1
+    }
+  }
 
   });
 
@@ -1582,7 +1631,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     pagination: false,
     perPage: 5,
     autoScroll: {
-      speed: 1,
+      speed: 0,
     },
 
     focus: "center",

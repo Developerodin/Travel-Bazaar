@@ -1,14 +1,28 @@
 import * as THREE from "three";
 import { OrbitControls } from 'jsm/controls/OrbitControls.js';
 
-const w = window.innerWidth;
-const h = window.innerHeight;
+// Function to get dimensions
+function getDimensions() {
+  const width = (window.innerWidth <= 500) ? 500 : window.innerWidth;
+  const height = (window.innerWidth <= 500) ? 500 : window.innerHeight;
+  return { width, height };
+}
+
+// Function to adjust the globe size
+function adjustGlobeSize() {
+  return (window.innerWidth <= 500) ? 1.8 : 2.5;
+}
+
+// Set initial dimensions and globe size
+let { width, height } = getDimensions();
+let globeSize = adjustGlobeSize();
+
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xf2efdf);
-const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+scene.background = null;
+const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 camera.position.z = 5;
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(w, h);
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(width, height);
 
 // Create a container for all Earth-related elements
 const earthContainer = document.querySelector('.earth-container');
@@ -26,24 +40,29 @@ const detail = 12;
 
 // Create a video element
 const video = document.createElement('video');
-video.src = 'assets/imgs/Newmap.mp4'; 
+video.src = 'assets/imgs/Newmap.mp4';
 video.loop = true;
-video.muted = true; 
-video.play();
+video.muted = true;
+video.setAttribute('playsinline', ''); // Ensure video plays inline on iOS
+video.play().catch(error => {
+  console.error('Video play failed:', error);
+  // Show some UI to inform the user that interaction is needed
+  // For example, you could display a play button that the user needs to click
+});
 
 // Create a video texture from the video element
 const texture = new THREE.VideoTexture(video);
-texture.minFilter = THREE.LinearFilter; 
+texture.minFilter = THREE.LinearFilter;
+texture.magFilter = THREE.LinearFilter; // Ensure the texture filters are set
+texture.format = THREE.RGBFormat; // Explicitly set texture format if needed
 
-// Adjust globe size
-const globeWidth = 2.5; 
-const globeHeight = 2.5; 
-const geometry = new THREE.IcosahedronGeometry(1, detail);
-geometry.scale(globeWidth, globeHeight, globeWidth); 
+// Create geometry and scale it initially
+let geometry = new THREE.IcosahedronGeometry(1, detail);
+geometry.scale(globeSize, globeSize, globeSize);
 
 const material = new THREE.MeshBasicMaterial({
   map: texture,
-  side: THREE.DoubleSide, 
+  side: THREE.DoubleSide,
 });
 
 const earthMesh = new THREE.Mesh(geometry, material);
@@ -154,9 +173,19 @@ function animate() {
 animate();
 
 function handleWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  const { width: newW, height: newH } = getDimensions();
+  camera.aspect = newW / newH;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(newW, newH);
+
+  // Adjust globe size and recreate geometry
+  const newGlobeSize = adjustGlobeSize();
+  geometry.dispose(); // Dispose the old geometry
+  geometry = new THREE.IcosahedronGeometry(1, detail);
+  geometry.scale(newGlobeSize, newGlobeSize, newGlobeSize);
+
+  // Update the earth mesh with the new geometry
+  earthMesh.geometry = geometry;
 }
 
 window.addEventListener('resize', handleWindowResize, false);
